@@ -1,0 +1,321 @@
+<ga-config>
+    <!-- Código seguimiento test -->
+    <!-- <ga-code></ga-code>-->
+    <!-- Código seguimiento produccion -->
+    <ga-code></ga-code>
+    <frequency>60</frequency>
+    <screens>
+        <screen code="LOGIN" description="Pantalla de login">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="REGISTER" description="Pantalla de registro">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="MENU" description="Mmenú de acceso a todas las secciones">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="MIBEBE_SELECCION" description="Selección de bebé en sección MiBebe">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="MIBEBE_ANYADIR" description="Pantalla para añadir bebé">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="MIBEBE_DETALLE" description="Detalle de un bebé">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="LA_FAMILIA_SELECCION" description="Selección de un bebé en sección La Familia">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="LA_FAMILIA_ANYADIR" description="Pantalla para añadir un integrante a la familia">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="LA_FAMILIA_DETALLE" description="Pantalla de detalle para un miembro de la familia">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="VIGILABEBES_SELECCION_MODELO" description="Pantalla de selección del tipo de cámara">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="VIGILABEBES_CAMARA" description="Subsección cámara dentro de la sección de vigilabebes">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="VIGILABEBES_EVENTOS" description="Subsección eventos dentro de la sección de vigilabebes">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="VIGILABEBES_ANYADIR" description="Subsección añadir dentro de la sección de vigilabebes">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="TERMOMETRO_SELECCION" description="Selección de un bebé en sección Termómetro">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="TERMOMETRO_OPCIONES" description="Pantalla de selección de opciones de la sección termómetro">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="TERMOMETRO_NUEVA_TOMA" description="Pantalla nueva toma de la sección termómetro">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="TERMOMETRO_HISTORICO"  description="Pantalla histórico de la sección termómetro">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="BEMYBUDDY_ACCESO" description="Pantalla de solicitud de acceso de bemybuddy">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="BEMYBUDDY_MENU" description="Menú de opciones de la sección bemybuddy">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="BEMYBUDDY_PLAYER"  description="Pantalla de reproducción de la sección bemybuddy">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="BEMYBUDDY_SETTINGS"  description="Pantalla de información/configuración de la sección bemybuddy">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="CALENDARIO_MENU" description="Pantalla principal de la sección calendario">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="CALENDARIO_EVENTO_DETALLE" description="Pantalla de detalle de un evento de la sección calendario">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="CALENDARIO_EVENTO_ANYADIR" description="Pantalla para añadir un evento en la sección calendario">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="FICHA_MEDICA_SELECCION" description="Selección de un bebé en la sección ficha médica">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="FICHA_MEDICA_DETALLE_CITA" description="Detalle de una cita en la ficha médica">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="FICHA_MEDICA_DETALLE_VACUNACION" description="Detalle de una vacunación en la ficha médica">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="FICHA_MEDICA_DETALLE_CRECIMIENTO" description="Detalle de un crecimiento en la ficha médica">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="ALBUM_FOTOS_MENU" description="Pantalla principal de la sección album con todas las fotos">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="ALBUM_FOTOS_DETALLE" description="Visualización a pantalla completa de una foto">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="EMYSCALE_SELECCION" description="Selección de un bebé en la sección eMyScale">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="EMYSCALE_OPCIONES" description="Pantalla de menú de la sección eMyScale">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="EMYSCALE_NUEVA_TOMA" description="Pantalla para añadir una nueva toma en la sección eMyScale">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="EMYSCALE_HISTORICO_LATEST" description="Pantalla de histórico de últimos registros en la sección eMyScale">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="EMYSCALE_HISTORICO_ALL" description="Pantalla de histórico de todos los registros en la sección eMyScale">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="EMYSCALE_HISTORICO_GRAFICO" description="Pantalla de histórico con gráfico en la sección eMyScale">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="SETTINGS_MENU" description="Pantalla de Ajustes y Contacto">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="SETTINGS_MYSCALE_UNIT_SELECTOR" description="Pantalla de selección de unidad de peso para la sección MyScale">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="SETTINGS_MYSCALE_CONTACTO" description="Pantalla de contacto dentro de la sección Ajustes">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="MI_EMBARAZO_FECHA_PARTO" description="Pantalla para indicar la fecha del parto">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="MI_EMBARAZO_ESCUCHALATIDOS" description="Pantalla con la gráfica de escuchalatidos y el grabador/reproductor">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="MI_EMBARAZO_TUS_SONIDOS" description="Pantalla con el listado de mis sonidos">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="MI_EMBARAZO_BLUETOOTH" description="Pantalla con el listado de dispositivos bluetooth para realizar la conexión">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="MI_EMBARAZO_BEBE_DATOS" description="Sección dentro de bebé con los datos médicos">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="MI_EMBARAZO_BEBE_NUEVOS_DATOS" description="Sección dentro de bebé para añadir los datos médicos">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="MI_EMBARAZO_BEBE_ECOGRAFIA" description="Sección dentro de bebé con las ecografías">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="MI_EMBARAZO_BEBE_NUEVA_ECOGRAFIA" description="Sección dentro de bebé para añadir ecografías">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="MI_EMBARAZO_BEBE_GRAFICA" description="Sección dentro de bebé con la gráfica de datos médicos">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="MI_EMBARAZO_MAMA_GRAFICA" description="Sección dentro de mamá con la gráfica de evolución del peso">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="MI_EMBARAZO_MAMA_TENSION" description="Sección dentro de mamá con el registro de la tensión arterial">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="MI_EMBARAZO_MAMA_MOV_FETAL" description="Sección dentro de mamá con los movimientos fetales">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="MI_EMBARAZO_MAMA_UTERO" description="Sección dentro de mamá con la altura del útero">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="MI_EMBARAZO_MAMA_TRIPITA" description="Sección dentro de mamá con las imágenes de la tripita">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="MI_EMBARAZO_MAMA_TRIPITA_ANYADIR" description="Sección dentro de mamá para añadir imágenes de la tripita">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="MI_EMBARAZO_CITAS" description="Pantalla con el listado de las citas médicas">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="MI_EMBARAZO_CITAS_ADD" description="Pantalla para añadir una cita médica dentro de embarazo">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="MI_EMBARAZO_CONTRACCIONES" description="Pantalla con el listado de contracciones">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="MI_EMBARAZO_DIARIO" description="Pantalla con el listado con el diario del bebé">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="MI_EMBARAZO_DIARIO_ADD" description="Pantalla para añadir un registro en el diario">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="MI_EMBARAZO_AJUSTES" description="Pantalla con los ajustes para borrar y crear un nuevo embarazo">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+        <screen code="RATE_APP" description="Pantalla de valorar app">
+            <android-activity name="" />
+            <ios-controller name="" />
+        </screen>
+    </screens>
+    <categories>
+        
+        <category code="MIBEBE">
+            <events>
+                <event code="BEBE_GUARDADO"/>
+            </events>
+        </category>
+        <category code="CALENDARIO">
+            <events>
+                <event code="EVENTO_GUARDADO"/>
+            </events>
+        </category>
+        <category code="VIGILABEBE">
+            <events>
+                <event code="PLAY"/>
+                <event code="PAUSE"/>
+            </events>
+        </category>
+        <category code="FICHA_MEDICA">
+            <events>
+                <event code="CITA_MEDICA_GUARDADA"/>
+                <event code="VACUNA_GUARDADA"/>
+                <event code="MEDIDA_GUARDADA"/>
+            </events>
+        </category>
+        <category code="TERMOMETRO">
+            <events>
+                <event code="MEDIDA_MANUAL"/>
+                <event code="MEDIDA_AUTOMATICA" description="La etiqueta será el tipo de termómetro: thermoadvanced plus (sonido), thermoadvanced pharma (Bluetooth)"/>
+            </events>
+        </category>
+        <category code="MY_SCALE">
+            <events>
+                <event code="MEDIDA_MANUAL"/>
+                <event code="MEDIDA_AUTOMATICA"/>
+            </events>
+        </category>
+        <category code="MY_BUDDY">
+            <events>
+                <event code="RECORD"/>
+                <event code="PLAY" description="La etiqueta será el nombre de la canción"/>
+                <event code="ADD_FAVORITE" description="La etiqueta será el nombre de la canción"/>
+                <event code="REMOVE_FAVORITE" description="La etiqueta será el nombre de la canción"/>
+                <event code="PLAYER_SECTION" description="La etiqueta será el nombre de la categoría (Parent Sounds, lullabies,...)"/>
+            </events>
+        </category>
+        <category code="MI_EMBARAZO">
+            <events>
+                <event code="SWEETBEAT_RECORD" />
+                <event code="SWEETBEAT_PLAY" />
+                <event code="SWEETBEAT_SHARE" />
+                <event code="BEBE_NUEVA_ECO" />
+                <event code="BEBE_NUEVOS_DATOS" />
+                <event code="MAMA_NUEVO_PESO" />
+                <event code="MAMA_NUEVA_TENSION" />
+                <event code="MAMA_MOV_FETAL" />
+                <event code="MAMA_NUEVA_MEDIDA" />
+                <event code="MAMA_NUEVA_TRIPITA" />
+                <event code="CITA_MEDICA_NUEVA" />
+                <event code="CONTRAC_INICIO" />
+                <event code="CONTRAC_FIN" />
+                <event code="DIARIO_NUEVO" />
+                <event code="AJUSTES_NUEVO" />
+                <event code="AJUSTES_BORRAR" />
+            </events>
+        </category>
+    </categories>
+</ga-config>
+

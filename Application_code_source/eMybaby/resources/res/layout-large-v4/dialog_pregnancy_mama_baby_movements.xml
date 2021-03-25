@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/mama_text_size_28pt" android:textColor="@color/text_color" android:id="@+id/tv_dialog_baby_movements" android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingRight="15dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/TR_MOVIMIENTOS_FETALES"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+        <ImageView android:id="@+id/img_dialog_baby_movements_1" android:layout_width="55dp" android:layout_height="55dp" android:layout_marginLeft="10dp" android:src="@drawable/ic_circular_plus_grey" android:scaleType="centerInside"/>
+        <ImageView android:id="@+id/img_dialog_baby_movements_2" android:layout_width="55dp" android:layout_height="55dp" android:layout_marginLeft="75dp" android:src="@drawable/ic_circular_plus_grey" android:scaleType="centerInside"/>
+    </FrameLayout>
+    <include android:id="@+id/pregnancy_mama_dialog_common_part" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/dialog_pregnancy_mama_base"/>
+</LinearLayout>

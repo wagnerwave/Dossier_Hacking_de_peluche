@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sozpic.miniland.video.TopMenuActivityVideo android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/cabecera" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="@dimen/alto_menu_head"/>
+    <ScrollView android:background="@drawable/cuadrorosa" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp">
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/edit_camera_degradado" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/imagencamara" android:layout_width="@dimen/camara_mini" android:layout_height="@dimen/camara_mini" android:layout_marginLeft="20dp" android:src="@drawable/edit_image"/>
+                <TextView android:textSize="@dimen/fuente_home" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center" android:id="@+id/udid" android:padding="5dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:padding="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/fuente_home" android:textColor="#000000" android:id="@+id/txtSecurityCodeSettings" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="15dp"/>
+                <ImageView android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="0.7dp" android:layout_marginBottom="15dp"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <Button android:id="@+id/btnModifySecurityCode" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/panelVideoQualitySetting" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/fuente_home" android:textColor="#ffffff" android:gravity="center" android:id="@+id/video_settings_title" android:background="#ff1865" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <LinearLayout android:orientation="horizontal" android:background="#ffffff" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/video_quality_title" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <Spinner android:textSize="@dimen/fuente_home" android:gravity="right|center_vertical|center_horizontal|center" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/spinVideoQuality" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:backgroundTint="@color/blue"/>
+                </LinearLayout>
+                <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <LinearLayout android:id="@+id/panelVideoFlip" android:background="#ffffff" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="center" android:layout_gravity="center" android:id="@+id/video_flip_title" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <Spinner android:textSize="@dimen/fuente_home" android:gravity="right|center_vertical|center_horizontal|center" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/spinVideoFlip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+                </LinearLayout>
+                <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginBottom="10dp"/>
+                <LinearLayout android:id="@+id/panelEnvironmentMode" android:background="#ffffff" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="15dp">
+                    <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="fill_vertical" android:id="@+id/environment_mode_title" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="2"/>
+                    <Spinner android:textSize="@dimen/fuente_home" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/spinEnvironment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/panelWiFiSetting" android:background="#ffffff" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:id="@+id/txtWifiSettings" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="15dp"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="fill_vertical" android:id="@+id/txtTitleWiFiSSID" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="2"/>
+                    <TextView android:textSize="@dimen/fuente_home" android:textStyle="bold" android:textColor="#404041" android:id="@+id/txtWiFiSSID" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/fuente_home" android:gravity="fill_vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="2"/>
+                    <TextView android:textSize="@dimen/fuente_home" android:textColor="#999999" android:id="@+id/txtWiFiStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                    <Button android:textSize="@dimen/fuente_home" android:textColor="#ffffff" android:id="@+id/btnManageWiFiNetworks" android:background="@drawable/boton_redondeado_rosa" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/panelEventSetting" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+                <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:id="@+id/txtEventSettings" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="15dp"/>
+                <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="center" android:layout_gravity="center" android:id="@+id/txtMotionDetection" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <Spinner android:textSize="@dimen/fuente_home" android:gravity="right" android:layout_gravity="right" android:id="@+id/spinMotionDetection" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                </LinearLayout>
+                <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="center" android:layout_gravity="center" android:id="@+id/txtNotification" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <Spinner android:textSize="@dimen/fuente_home" android:gravity="right" android:layout_gravity="right" android:id="@+id/spinEventNotification" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                </LinearLayout>
+                <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:id="@+id/txtEventSd" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="15dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/panelRecordSetting" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+                <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:id="@+id/txtRecordSettings" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="15dp"/>
+                <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="center" android:layout_gravity="center" android:id="@+id/txtMode" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <Spinner android:textSize="@dimen/fuente_home" android:gravity="right|center_vertical|center_horizontal|center" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/spinRecordingMode" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                </LinearLayout>
+                <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/panelFormatSDCard" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+                    <ImageView android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="15dp"/>
+                    <Button android:textSize="@dimen/fuente_home" android:textColor="#ffffff" android:gravity="center" android:id="@+id/btnFormatSDCard" android:background="@drawable/boton_redondeado_rosa" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp"/>
+                    <TextView android:textSize="@dimen/fuente_home" android:textColor="#ff0000" android:id="@+id/txtFormatSDCard" android:padding="10dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="30dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/panelDeviceInfo" android:background="#ffffff" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:id="@+id/txtDeviceInfo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="15dp"/>
+                <ImageView android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="0.7dp" android:layout_marginBottom="15dp"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="fill_vertical" android:id="@+id/txtModel" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:id="@+id/txtDeviceModel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+                <ImageView android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="0.7dp" android:layout_marginBottom="15dp"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp">
+                    <TextView android:textSize="@dimen/fuente_home" android:textColor="#333333" android:gravity="fill_vertical" android:id="@+id/txtVersion" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="@dimen/fuente_home" android:textColor="#000000" android:id="@+id/txtDeviceVersion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+                <ImageView android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="0.7dp" android:layout_marginBottom="15dp"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp">
+                    <TextView android:textSize="@dimen/fuente_home" android:textColor="#333333" android:gravity="fill_vertical" android:id="@+id/txtCompany" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="@dimen/fuente_home" android:textColor="#000000" android:id="@+id/txtVenderName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+                <ImageView android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="0.7dp" android:layout_marginBottom="15dp"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp">
+                    <TextView android:textSize="@dimen/fuente_home" android:textColor="#333333" android:gravity="fill_vertical" android:id="@+id/txtTotalSpace" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="@dimen/fuente_home" android:textColor="#000000" android:id="@+id/txtStorageTotalSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+                <ImageView android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="0.7dp" android:layout_marginBottom="15dp"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp">
+                    <TextView android:textSize="@dimen/fuente_home" android:textColor="#333333" android:gravity="fill_vertical" android:id="@+id/txtFreeSpace" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="@dimen/fuente_home" android:textColor="#000000" android:id="@+id/txtStorageFreeSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+                <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/fuente_home" android:textColor="#ffffff" android:id="@+id/btnCancel" android:background="#ff1865" android:padding="@dimen/margen_imagenes" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+        <Button android:textSize="@dimen/fuente_home" android:textColor="#ffffff" android:id="@+id/btnOK" android:background="#00c1a5" android:padding="@dimen/margen_imagenes" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

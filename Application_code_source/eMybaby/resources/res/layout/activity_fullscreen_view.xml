@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sozpic.miniland.TopMenuActivity android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/cabecera" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="@dimen/alto_menu_head"/>
+    <com.sozpic.miniland.utiles.ZoomableImageView android:layout_gravity="center" android:id="@+id/imagen" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/imagenes_default" android:layout_weight="1"/>
+    <Button android:textColor="#000000" android:id="@+id/btnClose" android:background="@drawable/button_background" android:paddingLeft="10dp" android:paddingTop="2dp" android:paddingRight="10dp" android:paddingBottom="2dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginRight="15dp" android:layout_marginBottom="15dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    <View android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/controlador" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_marginBottom="5dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/btnDelete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/eliminar_bebe"/>
+    </LinearLayout>
+</LinearLayout>

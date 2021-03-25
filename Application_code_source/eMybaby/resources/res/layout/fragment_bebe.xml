@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="top" android:layout_gravity="top" android:orientation="vertical" android:id="@+id/bebe" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.7">
+        <ListView android:id="@+id/listadobebe" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="@android:color/transparent"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/linear_bebe" android:background="@drawable/fondocrear" android:paddingTop="30dp" android:paddingBottom="30dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.3">
+        <com.sozpic.miniland.componentes.TextViewHelvetica android:textSize="@dimen/fuente_tap" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

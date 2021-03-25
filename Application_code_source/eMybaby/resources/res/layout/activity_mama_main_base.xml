@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sozpic.miniland.TopMenuActivity android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/mama_common_toolbar_header" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="@dimen/alto_menu_head"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/mama_bottom_options" android:layout_width="match_parent" android:layout_height="@dimen/player_control_icons_size" android:weightSum="5" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/mama_img_weight_evolution" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="5dp" android:src="@drawable/ic_weight_evolution" android:scaleType="centerInside" android:tint="@color/mama_menu_options_start_color" android:layout_weight="1"/>
+        <ImageView android:id="@+id/mama_img_blood_pressure" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="5dp" android:src="@drawable/ic_blood_presure" android:scaleType="centerInside" android:tint="@color/mama_menu_options_start_color" android:layout_weight="1"/>
+        <ImageView android:id="@+id/mama_img_baby_movements" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="5dp" android:src="@drawable/ic_baby_movements" android:scaleType="centerInside" android:tint="@color/mama_menu_options_start_color" android:layout_weight="1"/>
+        <ImageView android:id="@+id/mama_img_uterus_height" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="5dp" android:src="@drawable/ic_uterus_height" android:scaleType="centerInside" android:tint="@color/mama_menu_options_start_color" android:layout_weight="1"/>
+        <ImageView android:id="@+id/mama_img_my_belly" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="5dp" android:src="@drawable/ic_my_belly" android:scaleType="centerInside" android:tint="@color/mama_menu_options_start_color" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_bottom_item_options" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/player_control_icons_size" android:weightSum="2" android:layout_alignParentBottom="true">
+        <FrameLayout android:id="@+id/fl_mama_main_edit" android:background="@color/grey" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:padding="6dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_pen_write" android:scaleType="centerInside"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/fl_mama_main_delete" android:background="@color/pregnancy_button_state_unselected_unpressed" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_trash" android:scaleType="centerInside"/>
+        </FrameLayout>
+    </LinearLayout>
+    <View android:id="@+id/mama_bottom_line_separator" android:background="@color/grey" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_above="@+id/mama_bottom_options"/>
+    <com.cuatroochenta.miniland.utils.CustomViewPager android:id="@+id/mama_main_view_pager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/mama_bottom_line_separator" android:layout_below="@+id/mama_common_toolbar_header"/>
+</RelativeLayout>

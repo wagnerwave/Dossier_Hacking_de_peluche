@@ -1,0 +1,26 @@
+package a.d.a.a.h.g;
+
+import a.d.a.a.h.g.f;
+import android.os.Bundle;
+
+public final class k extends f.a {
+
+    /* renamed from: e  reason: collision with root package name */
+    public final /* synthetic */ String f1758e;
+    public final /* synthetic */ String f;
+    public final /* synthetic */ Bundle g;
+    public final /* synthetic */ f h;
+
+    /* JADX INFO: super call moved to the top of the method (can break code semantics) */
+    public k(f fVar, String str, String str2, Bundle bundle) {
+        super(true);
+        this.h = fVar;
+        this.f1758e = str;
+        this.f = str2;
+        this.g = bundle;
+    }
+
+    public final void a() {
+        this.h.h.clearConditionalUserProperty(this.f1758e, this.f, this.g);
+    }
+}

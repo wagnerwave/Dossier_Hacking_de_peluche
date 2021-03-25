@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/borde_redondeado_blanco" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/reconn" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/ctxreconn"/>
+            <TextView android:textSize="@dimen/fuente_home" android:textColor="#00bfa5" android:gravity="center" android:layout_gravity="center" android:id="@+id/txtReconnect" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View android:background="#eeeeee" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/editar" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/ctxeditar"/>
+            <TextView android:textSize="@dimen/fuente_home" android:textColor="#00bfa5" android:gravity="center" android:layout_gravity="center" android:id="@+id/txtEditCamera" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/event" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/ctxevent"/>
+            <TextView android:textSize="@dimen/fuente_home" android:textColor="#00bfa5" android:gravity="center" android:layout_gravity="center" android:id="@+id/txtViewEvent" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View android:background="#eeeeee" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/delete" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/ctxdelete"/>
+            <TextView android:textSize="@dimen/fuente_home" android:textColor="#00bfa5" android:gravity="center" android:layout_gravity="center" android:id="@+id/txtRemoveCamera" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/popup_video_help" android:background="@android:color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/fuente_home" android:textColor="#00bfa5" android:gravity="center" android:layout_gravity="center" android:id="@+id/txtHelp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/ic_help_menu" android:layout_toLeftOf="@+id/txtHelp"/>
+    </RelativeLayout>
+</LinearLayout>

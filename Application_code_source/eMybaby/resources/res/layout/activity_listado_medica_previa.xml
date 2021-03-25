@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sozpic.miniland.TopMenuActivity android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/cabecera" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="@dimen/alto_menu_head"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/op1" android:background="@drawable/cuadro1" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.sozpic.miniland.componentes.TextViewHelvetica android:textSize="@dimen/fuente_tap" android:textColor="#ffffff" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/t1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/op2" android:background="@drawable/cuadro2" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.sozpic.miniland.componentes.TextViewHelvetica android:textSize="@dimen/fuente_tap" android:textColor="#ffffff" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/t2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/op3" android:background="@drawable/cuadro3" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.sozpic.miniland.componentes.TextViewHelvetica android:textSize="@dimen/fuente_tap" android:textColor="#ffffff" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/t3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="alto_circulo">180dp</dimen>
+    <dimen name="altobebebe">420dp</dimen>
+    <dimen name="altootrosspinner">15dp</dimen>
+    <dimen name="anchootrosspinner">20dp</dimen>
+    <dimen name="be_player">80dp</dimen>
+    <dimen name="be_player_mid">40dp</dimen>
+    <dimen name="be_player_mid_mini">30dp</dimen>
+    <dimen name="be_player_play">120dp</dimen>
+    <dimen name="fuente_home">28dp</dimen>
+    <dimen name="fuente_home2">26dp</dimen>
+    <dimen name="fuente_menu_temperatura">38dp</dimen>
+    <dimen name="imagen_camara_listado_h">120dp</dimen>
+    <dimen name="imagen_camara_listado_w">150dp</dimen>
+    <dimen name="imagen_info">55dp</dimen>
+    <dimen name="separacionhome">50dp</dimen>
+    <dimen name="texto">30dp</dimen>
+    <dimen name="texto2">34dp</dimen>
+    <dimen name="tmpp">100sp</dimen>
+</resources>

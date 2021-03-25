@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/bg_light_purple" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sozpic.miniland.TopMenuActivity android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/buddy_settings_common_header" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="@dimen/alto_menu_head" android:layout_marginBottom="10dp"/>
+    <TextView android:textSize="@dimen/settings_title_textsize" android:textColor="@color/default_text_color" android:gravity="right" android:id="@+id/buddy_settings_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_marginBottom="10dp"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="@color/list_divider" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <include android:id="@+id/buddy_settings_bluetooth" layout="@layout/item_settings"/>
+            <View android:background="@color/list_divider" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <include android:id="@+id/buddy_settings_technical_specifications" layout="@layout/item_settings"/>
+            <View android:background="@color/list_divider" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/buddy_settings_technical_specifications_detail_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

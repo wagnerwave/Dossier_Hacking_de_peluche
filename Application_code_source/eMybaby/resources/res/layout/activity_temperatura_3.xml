@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sozpic.miniland.TopMenuActivity android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/cabecera" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="@dimen/alto_menu_head"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:orientation="vertical" android:background="@drawable/fondo_historico_termometro" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <com.cuatroochenta.commons.widget.CircularImageView android:layout_gravity="center" android:id="@+id/lo" android:layout_width="@dimen/alto_circulo" android:layout_height="@dimen/alto_circulo" android:layout_marginTop="10dp"/>
+                    <TextView android:textSize="@dimen/fuente_menu_temperatura" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center" android:id="@+id/nombrebb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+                    <TextView android:textSize="@dimen/fuente_menu" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center" android:id="@+id/apellidobb" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="@dimen/fuente_home" android:textColor="#999999" android:gravity="center" android:layout_gravity="center" android:id="@+id/delete_measure_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15dp"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:background="#ff3e7d" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/fuente_home" android:textColor="#ffffff" android:gravity="left" android:layout_gravity="left" android:id="@+id/ultimos_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp"/>
+                <TextView android:textSize="@dimen/fuente_home2" android:textColor="#ff9fbe" android:gravity="left" android:layout_gravity="left" android:id="@+id/registros_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+            <ListView android:id="@+id/listadohistorico" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

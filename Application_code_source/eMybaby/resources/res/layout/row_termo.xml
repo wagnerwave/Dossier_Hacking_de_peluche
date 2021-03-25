@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:layout_weight="1">
+        <TextView android:textSize="@dimen/fuente_home" android:textColor="#666666" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/texto1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="-"/>
+        <TextView android:textSize="@dimen/fuente_home2" android:textColor="#ff8bb1" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="center_vertical" android:id="@+id/texto2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="-"/>
+    </LinearLayout>
+    <com.sozpic.miniland.componentes.TextViewHelvetica android:textSize="@dimen/fuente_grow" android:textColor="#ff3e7d" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/texto3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:text="0.0º"/>
+</LinearLayout>

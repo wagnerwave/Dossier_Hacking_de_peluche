@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#fac2de" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_gravity="top" android:id="@+id/scrollview" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/borde_redondeado_blanco" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                    <Spinner android:textSize="@dimen/fuente_home" android:gravity="center" android:layout_gravity="center" android:id="@+id/spinWiFiSSID" android:background="@null" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <ImageView android:layout_gravity="center" android:id="@+id/tick" android:layout_width="@dimen/imagen_tick_h" android:layout_height="@dimen/imagen_tick_w" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:src="@drawable/tick_fecha_abajo"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                    <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/txtTitleWiFiSignal" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp"/>
+                    <TextView android:textSize="@dimen/fuente_home" android:textStyle="bold" android:textColor="#404041" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/txtWiFiSignal" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                    <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/txtTitWiFiSecurity" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="5dp" android:layout_marginBottom="10dp"/>
+                    <TextView android:textSize="@dimen/fuente_home" android:textStyle="bold" android:textColor="#404041" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/txtWiFiSecurity" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <EditText android:textSize="@dimen/fuente_home" android:textColor="#404041" android:id="@+id/edtWiFiPassword" android:background="@drawable/boton_redondeado_blanco" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:singleLine="true" android:inputType="textPassword"/>
+                <CheckBox android:textSize="@dimen/fuente_home" android:textColor="#404041" android:id="@+id/chbShowHiddenPassword" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+                <Button android:textSize="@dimen/fuente_home" android:textColor="#ffffff" android:id="@+id/btnCancel" android:background="#ff1865" android:padding="@dimen/margen_imagenes" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+                <Button android:textSize="@dimen/fuente_home" android:textColor="#ffffff" android:id="@+id/btnOK" android:background="#00c1a5" android:padding="@dimen/margen_imagenes" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

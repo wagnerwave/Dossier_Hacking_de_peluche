@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/pregnancy_sound_list_bottom_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/player_control_textsize" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/bottom_bar_multiple_selector_select_all" android:background="@color/dark_green" android:padding="5dp" android:layout_width="0dp" android:layout_height="match_parent" android:lines="2" android:layout_weight="1"/>
+    <TextView android:textSize="@dimen/player_control_textsize" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/bottom_bar_multiple_selector_cancel" android:background="@color/grey" android:padding="5dp" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:lines="2" android:layout_weight="1"/>
+    <ImageView android:id="@+id/bottom_bar_multiple_selector_delete" android:background="@color/red" android:padding="3dp" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/ic_trash" android:layout_weight="1"/>
+</LinearLayout>

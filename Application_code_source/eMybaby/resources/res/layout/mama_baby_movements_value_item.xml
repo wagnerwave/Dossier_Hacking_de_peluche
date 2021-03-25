@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingLeft="15dp" android:paddingTop="5dp" android:paddingRight="15dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/mama_text_size_28pt" android:textColor="@color/mama_menu_options_text_color" android:id="@+id/mama_weight_height_item_week" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Semana 25 + 1"/>
+    <TextView android:textSize="@dimen/mama_text_size_20pt" android:textColor="@color/grey" android:id="@+id/mama_weight_height_item_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5dp" android:text="20-09-16" android:layout_below="@+id/mama_weight_height_item_week"/>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_alignParentRight="true">
+        <ImageView android:id="@+id/img_item_baby_movements_1" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/ic_circular_plus_grey" android:scaleType="centerInside"/>
+        <ImageView android:id="@+id/img_item_baby_movements_2" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="40dp" android:src="@drawable/ic_circular_plus_grey" android:scaleType="centerInside"/>
+    </FrameLayout>
+</RelativeLayout>

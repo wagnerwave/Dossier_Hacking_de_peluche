@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="chefy_size">250dp</dimen>
+    <dimen name="emybaby_login_margin">240dp</dimen>
+    <dimen name="emybaby_pre_login_margin">190dp</dimen>
+    <dimen name="humi_margin_horizontal">100dp</dimen>
+    <dimen name="miniland_login_margin">220dp</dimen>
+    <dimen name="miniland_padding">50dp</dimen>
+    <dimen name="miniland_pre_login_margin">200dp</dimen>
+    <dimen name="miniland_world_card_margin_top">32dp</dimen>
+    <dimen name="miniland_world_images_height">240dp</dimen>
+    <dimen name="nutrition_chefy_margin_left">60dp</dimen>
+    <dimen name="nutrition_chefy_margin_top">50dp</dimen>
+    <dimen name="nutrition_chefy_text_size">18sp</dimen>
+    <dimen name="nutrition_header_text_size">20sp</dimen>
+    <dimen name="nutrition_images_height">270dp</dimen>
+    <dimen name="rate_star_size">50dp</dimen>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_above="@+id/ly_home_buttonlogin">
+        <RelativeLayout android:orientation="vertical" android:id="@+id/todo" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/calendar1" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <View android:id="@+id/sep" android:background="#e5e5e6" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/calendar1"/>
+            <ListView android:id="@+id/listacalendar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:cacheColorHint="@android:color/transparent" android:layout_below="@+id/sep"/>
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ly_home_buttonlogin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:id="@+id/sepp" android:background="#e5e5e6" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/icono" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="@dimen/alto_spinner" android:src="@drawable/addevento"/>
+    </LinearLayout>
+</RelativeLayout>

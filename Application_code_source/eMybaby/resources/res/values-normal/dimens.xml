@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ancho_medallas">110sp</dimen>
+    <dimen name="bienvenida_normal">20sp</dimen>
+    <dimen name="foto">120sp</dimen>
+    <dimen name="fuente_menu">18dp</dimen>
+    <dimen name="fuente_tap">32dp</dimen>
+    <dimen name="imagenes_icono">60dp</dimen>
+    <dimen name="imagenes_icono_camara_h">35dp</dimen>
+    <dimen name="imagenes_icono_camara_w">51dp</dimen>
+    <dimen name="menuz">100dp</dimen>
+    <dimen name="separador_izquierdo">35sp</dimen>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sozpic.miniland.video.TopMenuActivityVideo android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/cabecera" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="@dimen/alto_menu_head"/>
+    <View android:background="#e6e6e7" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/xs" android:background="#ff1865" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/fuente_menu" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/click_to_add_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/anchoimagenadd" android:layout_height="@dimen/altoimagenadd" android:layout_marginRight="5dp" android:src="@drawable/add_image" android:layout_toLeftOf="@+id/click_to_add_camera"/>
+        <ImageView android:id="@+id/video_help_button" android:background="@android:color/white" android:padding="@dimen/margen_imagenes" android:layout_width="@dimen/alto_menu_b" android:layout_height="@dimen/alto_menu_b" android:src="@drawable/ic_help_menu" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ListView android:id="@+id/lstCameraList" android:layout_width="match_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:divider="#e6e6e7" android:dividerHeight="0.5dp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@+id/imageView1" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_launcher"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/imageView2" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/nuevacab"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/fuente_home" android:textStyle="bold" android:textColor="#000000" android:gravity="center" android:id="@+id/format_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp"/>
+    <TextView android:textSize="@dimen/fuente_home" android:textColor="#333333" android:gravity="center" android:id="@+id/format_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+    <CheckBox android:textColor="#666666" android:layout_gravity="center" android:id="@+id/chbShowTipsFormatSDCard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <Button android:textSize="@dimen/fuente_home" android:id="@+id/btnFormatSDCard" android:background="@drawable/boton_tipo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp"/>
+        <Button android:textSize="@dimen/fuente_home" android:id="@+id/btnClose" android:background="@drawable/boton_tipo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp"/>
+    </LinearLayout>
+</LinearLayout>

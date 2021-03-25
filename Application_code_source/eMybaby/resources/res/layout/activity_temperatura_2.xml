@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/centro" android:background="#cccccc" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+    <ImageView android:id="@+id/imagen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/termo_recep" android:layout_centerInParent="true"/>
+    <RelativeLayout android:focusableInTouchMode="true" android:visibility="visible" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="0dp">
+        <LinearLayout android:scrollbarAlwaysDrawVerticalTrack="true" android:orientation="vertical" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+            <TableLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TableRow android:gravity="center" android:id="@+id/tableRow1" android:background="#cccccc" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/padding_large" android:textStyle="bold" android:gravity="center" android:id="@+id/textViewSetting" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Settings"/>
+                </TableRow>
+                <TableRow android:gravity="center" android:id="@+id/tableRow2" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_gravity="center" android:orientation="horizontal">
+                        <TextView android:layout_gravity="center_vertical" android:id="@+id/textView1" android:fitsSystemWindows="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="WaveForm:" android:scrollHorizontally="false"/>
+                        <RadioGroup android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/radioGroup_Mode" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <RadioButton android:textSize="@dimen/padding_medium" android:id="@+id/radio_Mode025" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.25"/>
+                            <RadioButton android:textSize="@dimen/padding_medium" android:id="@+id/radio_Mode05" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.5"/>
+                            <RadioButton android:textSize="@dimen/padding_medium" android:id="@+id/radio_Mode1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="1"/>
+                        </RadioGroup>
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:gravity="center" android:id="@+id/tableRow3" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_gravity="center" android:orientation="horizontal">
+                        <TextView android:gravity="center" android:layout_gravity="center" android:id="@+id/textView2" android:layout_width="0dp" android:layout_height="wrap_content" android:text="WaveForm :" android:layout_weight="50"/>
+                        <RadioGroup android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/radioGroup_WaveForm" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <RadioButton android:textSize="@dimen/padding_medium" android:id="@+id/radio_wave0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="0"/>
+                            <RadioButton android:textSize="@dimen/padding_medium" android:id="@+id/radio_wave1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1"/>
+                            <RadioButton android:textSize="@dimen/padding_medium" android:id="@+id/radio_wave2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2"/>
+                            <RadioButton android:textSize="@dimen/padding_medium" android:id="@+id/radio_wave3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3"/>
+                            <RadioButton android:textSize="@dimen/padding_medium" android:id="@+id/radio_wave4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4"/>
+                        </RadioGroup>
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:gravity="center" android:id="@+id/tableRow4" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@+id/textView3" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Threshold :" android:layout_weight="25"/>
+                    <TextView android:textStyle="bold" android:id="@+id/text_threshold" android:layout_width="0dp" android:layout_height="wrap_content" android:text="64" android:layout_weight="10"/>
+                    <SeekBar android:id="@+id/seekBar_Threshold" android:layout_width="0dp" android:layout_height="wrap_content" android:max="126" android:progress="62" android:progressDrawable="@drawable/seekbar_style" android:layout_weight="65"/>
+                </TableRow>
+                <TableRow android:gravity="center" android:id="@+id/tableRow6" android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:id="@+id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Central Freq : "/>
+                        <EditText android:textSize="@dimen/padding_medium" android:gravity="center" android:layout_gravity="center" android:id="@+id/editText_CentralFreq" android:layout_width="60dp" android:layout_height="wrap_content" android:text="17500" android:ems="10" android:inputType="number"/>
+                        <TextView android:id="@+id/textView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="iDf :"/>
+                        <EditText android:textSize="@dimen/padding_medium" android:gravity="center" android:id="@+id/editText_iDf" android:layout_width="45dp" android:layout_height="wrap_content" android:text="562" android:ems="10" android:inputType="number"/>
+                        <ToggleButton android:layout_gravity="center_vertical" android:id="@+id/btn_EnDecode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="Encode" android:textOff="Decode" android:onClick="OnClickEnDecode"/>
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:gravity="center" android:id="@+id/tableRow7" android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:id="@+id/textView6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RegCode :"/>
+                        <EditText android:textSize="@dimen/padding_medium" android:gravity="center" android:id="@+id/editText_RegCode" android:layout_width="80dp" android:layout_height="wrap_content" android:text="ZewEhexk" android:ems="10"/>
+                        <TextView android:id="@+id/textView7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Vol :"/>
+                        <EditText android:textSize="@dimen/padding_medium" android:gravity="center" android:id="@+id/editText_Vol" android:layout_width="45dp" android:layout_height="wrap_content" android:text="100" android:ems="10" android:inputType="number"/>
+                        <Button android:id="@+id/button_Set" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set" android:onClick="OnClickSet"/>
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+            <TableLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TableRow android:gravity="center" android:id="@+id/tableRow8" android:background="#cccccc" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/padding_large" android:textStyle="bold" android:gravity="center" android:layout_gravity="center" android:id="@+id/textViewActions" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Actions"/>
+                </TableRow>
+                <TableRow android:gravity="center" android:id="@+id/tableRow9" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/textView8" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Record" android:layout_weight="35"/>
+                        <ToggleButton android:id="@+id/btn_Record" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="35" android:onClick="OnClickRecord"/>
+                        <ProgressBar android:layout_gravity="center_vertical" android:id="@+id/progressBar1" android:visibility="invisible" android:layout_width="20dp" android:layout_height="20dp" android:max="10" android:progress="0" android:indeterminate="false" android:layout_weight="30" style="?android:attr/progressBarStyleSmall"/>
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:gravity="center" android:id="@+id/tableRow10" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <Button android:id="@+id/button_Q1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Q1" android:onClick="OnClickQuestion"/>
+                        <Button android:id="@+id/button_Q2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Q2" android:onClick="OnClickQuestion"/>
+                        <Button android:id="@+id/button_Q3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Q3" android:onClick="OnClickQuestion"/>
+                        <Button android:id="@+id/button_Q4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Q4" android:onClick="OnClickQuestion"/>
+                        <Button android:id="@+id/button_Q5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Q5" android:onClick="OnClickQuestion"/>
+                        <Button android:id="@+id/button_EncodeList" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Encode List" android:onClick="OnClickEncodeList"/>
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:gravity="center" android:id="@+id/tableRow11" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:id="@+id/textView9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Number : "/>
+                        <Button android:id="@+id/button_Prev" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Prev" android:onClick="OnClickNumber"/>
+                        <TextView android:id="@+id/textView_Number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5"/>
+                        <Button android:id="@+id/button_Next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Next" android:onClick="OnClickNumber"/>
+                        <TextView android:id="@+id/textView_dummy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_weight="5"/>
+                        <Button android:layout_gravity="right" android:id="@+id/button_CleanLog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Clean Log" android:layout_weight="40" android:onClick="OnClickCleanLog"/>
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+            <TableLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TableRow android:gravity="center" android:id="@+id/tableRow12" android:background="#cccccc" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/padding_large" android:textStyle="bold" android:textColor="#333333" android:gravity="center" android:id="@+id/textView10" android:background="#cccccc" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Log"/>
+                </TableRow>
+            </TableLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+                <ScrollView android:scrollbarSize="15px" android:scrollbarAlwaysDrawVerticalTrack="true" android:id="@+id/scrollView_Log" android:background="#333333" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:scrollbarSize="15px" android:scrollbarAlwaysDrawVerticalTrack="true" android:textSize="15sp" android:textColor="#ffffff" android:id="@+id/textView_Log" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Log will be shown here." android:singleLine="false"/>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

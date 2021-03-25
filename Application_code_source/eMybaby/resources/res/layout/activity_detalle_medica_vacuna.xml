@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ccfff4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sozpic.miniland.TopMenuActivity android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/cabecera" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="@dimen/alto_menu_head"/>
+    <include android:id="@+id/detalle_medica_vacuna_buttons_container" android:layout_width="match_parent" android:layout_height="@dimen/alto_spinner" android:layout_alignParentBottom="true" layout="@layout/layout_edit_delete_buttons"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/detalle_medica_vacuna_buttons_container" android:layout_below="@+id/cabecera">
+        <LinearLayout android:orientation="vertical" android:id="@+id/x" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/fuente_menu" android:textStyle="normal" android:textColor="#404041" android:gravity="center" android:layout_gravity="center" android:id="@+id/header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp"/>
+            <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:orientation="horizontal" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/vacuna_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp"/>
+                <TextView android:textSize="@dimen/fuente_home" android:textColor="#aaaaaa" android:gravity="right" android:layout_gravity="right" android:id="@+id/vacuna" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:orientation="horizontal" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/vacuna_tipo_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp"/>
+                <TextView android:textSize="@dimen/fuente_home" android:textColor="#aaaaaa" android:gravity="right" android:layout_gravity="right" android:id="@+id/tipo" android:padding="15dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+            <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="30dp"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="#ffffff" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/fecha_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp"/>
+                <EditText android:textSize="@dimen/fuente_home" android:textColor="#aaaaaa" android:textColorHint="#404041" android:gravity="right|center_vertical|center_horizontal|center" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/fecha" android:background="#ffffff" android:padding="5dp" android:focusable="false" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1" android:inputType="none"/>
+            </LinearLayout>
+            <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="30dp"/>
+            <LinearLayout android:orientation="horizontal" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/lote_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp"/>
+                <TextView android:textSize="@dimen/fuente_home" android:textColor="#aaaaaa" android:gravity="right" android:layout_gravity="right" android:id="@+id/lote" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:orientation="horizontal" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/laboratorio_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp"/>
+                <TextView android:textSize="@dimen/fuente_home" android:textColor="#aaaaaa" android:gravity="right" android:layout_gravity="right" android:id="@+id/laboratorio" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="texto"/>
+            </LinearLayout>
+            <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:orientation="horizontal" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/colegiado_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp"/>
+                <TextView android:textSize="@dimen/fuente_home" android:textColor="#aaaaaa" android:gravity="right" android:layout_gravity="right" android:id="@+id/colegiado" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="texto"/>
+            </LinearLayout>
+            <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="30dp"/>
+            <LinearLayout android:orientation="vertical" android:background="#ffffff" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="left" android:layout_gravity="left" android:id="@+id/observa_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp"/>
+                <EditText android:textSize="@dimen/fuente_home" android:textColor="#aaaaaa" android:id="@+id/observaciones" android:background="#ffffff" android:padding="5dp" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/white" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.cuatroochenta.commons.widget.CircularImageView android:id="@+id/baby_item_image" android:layout_width="@dimen/alto_menu" android:layout_height="@dimen/alto_menu" android:layout_marginRight="10dp" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/baby_item_disclosure" android:padding="@dimen/margen_imagenes" android:layout_width="@dimen/alto_menu_b" android:layout_height="@dimen/alto_menu_b" android:layout_marginLeft="10dp" android:src="@drawable/ic_grey_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_toLeftOf="@+id/baby_item_disclosure" android:layout_toRightOf="@+id/baby_item_image" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/fuente_home" android:textColor="@color/default_text_color" android:id="@+id/baby_item_name" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/fuente_home2" android:textColor="#9dafb4" android:id="@+id/baby_item_birthdate" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sozpic.miniland.TopMenuActivity android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/cabecera" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="@dimen/alto_menu_head"/>
+    <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@+id/linear_bebe" android:background="@drawable/fondocrear" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/cabecera">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <com.cuatroochenta.commons.widget.CircularImageView android:layout_gravity="center" android:id="@+id/lo" android:layout_width="@dimen/alto_circulo" android:layout_height="@dimen/alto_circulo" android:layout_margin="5dp"/>
+            <TextView android:textSize="@dimen/fuente_menu" android:textColor="#ffffff" android:ellipsize="end" android:layout_gravity="center" android:id="@+id/tv_crio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="nombre" android:maxLines="1" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/fuente_menu" android:textColor="#ffffff" android:ellipsize="end" android:layout_gravity="center" android:id="@+id/apellido" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="apellido" android:maxLines="1" android:singleLine="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/ops" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/linear_bebe">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/lop1" android:background="@drawable/button_selected_op1" android:padding="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="@dimen/fuente_home2" android:textColor="#404041" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/op1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/fuente_home2" android:textColor="#80dfd2" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/op1_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true"/>
+        </LinearLayout>
+        <View android:background="#cccccc" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/lop2" android:background="@drawable/button_selected_op1" android:padding="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="@dimen/fuente_home2" android:textColor="#404041" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/op2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/fuente_home2" android:textColor="#80dfd2" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/op2_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true"/>
+        </LinearLayout>
+        <View android:background="#cccccc" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/lop3" android:background="@drawable/button_selected_op1" android:padding="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="@dimen/fuente_home2" android:textColor="#404041" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/op3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/fuente_home2" android:textColor="#80dfd2" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/op3_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/separador" android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/ops"/>
+    <ListView android:id="@+id/list_bebe_medico" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/nuevo" android:layout_below="@+id/separador"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/nuevo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="#e5e5e6" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/icono" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="@dimen/alto_spinner" android:src="@drawable/admedica"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sozpic.miniland.TopMenuActivity android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/select_option_common_header" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="@dimen/alto_menu_head"/>
+    <include android:id="@+id/baby_list_header" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/myscale_header_list"/>
+    <RelativeLayout android:id="@+id/select_option_new_reading" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/select_option_new_reading_disclosure" android:layout_width="25dp" android:layout_height="25dp" android:layout_margin="@dimen/margen_imagenes" android:src="@drawable/ic_disclosure_grey" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/fuente_home" android:textColor="@color/default_text_color" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/select_option_new_reading_option" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toLeftOf="@+id/select_option_new_reading_disclosure" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="@color/list_divider" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <RelativeLayout android:id="@+id/select_option_historical" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/select_option_historical_disclosure" android:layout_width="25dp" android:layout_height="25dp" android:layout_margin="@dimen/margen_imagenes" android:src="@drawable/ic_disclosure_grey" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/fuente_home" android:textColor="@color/default_text_color" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/select_option_historical_option" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toLeftOf="@+id/select_option_historical_disclosure" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="@color/list_divider" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

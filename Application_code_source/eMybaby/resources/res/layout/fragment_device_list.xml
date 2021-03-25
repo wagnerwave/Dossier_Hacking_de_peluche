@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/network_tip">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/swipe_container" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ListView android:id="@+id/lv_device_list" android:background="@color/transparent" style="@style/list_view"/>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@+id/list_background_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60dp" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/ts_16" android:textColor="@color/text_color2" android:gravity="center" android:id="@+id/tv_none_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/ts_14" android:textColor="@color/notice_font_color" android:gravity="center" android:id="@+id/network_tip" android:background="@color/notice_bg_color" android:padding="@dimen/mg_3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="30dp" android:layout_below="@+id/tv_add_device_tip"/>
+    <TextView android:textSize="@dimen/ts_15" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_add_device_tip" android:background="@color/color_humidificador" android:padding="@dimen/mg_10" android:focusable="true" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?attr/selectableItemBackground" android:lineSpacingExtra="3dp"/>
+    <TextView android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_add_button" android:background="@color/color_humidificador" android:layout_width="match_parent" android:layout_height="52dp" android:foreground="?attr/selectableItemBackground" android:layout_alignParentBottom="true" android:textAllCaps="true"/>
+</RelativeLayout>

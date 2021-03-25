@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/home" android:background="#336699" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true">
+        <LinearLayout android:gravity="center" android:layout_gravity="top" android:orientation="vertical" android:id="@+id/x" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/l1" android:layout_width="match_parent" android:layout_height="match_parent">
+                <RelativeLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <com.sozpic.miniland.componentes.Cuadrado android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                        <ImageView android:layout_gravity="center" android:id="@+id/x3" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/icono_bebe_" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+                    </com.sozpic.miniland.componentes.Cuadrado>
+                    <com.sozpic.miniland.componentes.TextViewGotham android:textSize="@dimen/fuente_menu" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tmibebe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/separacionhome" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <com.sozpic.miniland.componentes.Cuadrado android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                        <ImageView android:layout_gravity="center" android:id="@+id/x5" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/icono_familia_" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+                    </com.sozpic.miniland.componentes.Cuadrado>
+                    <com.sozpic.miniland.componentes.TextViewGotham android:textSize="@dimen/fuente_menu" android:textColor="#ffffff" android:gravity="center" android:id="@+id/menu_text_family" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/separacionhome" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/l2" android:layout_width="match_parent" android:layout_height="match_parent">
+                <RelativeLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <com.sozpic.miniland.componentes.Cuadrado android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                        <ImageView android:layout_gravity="center" android:id="@+id/x1" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/icono_vigilabebes_" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+                    </com.sozpic.miniland.componentes.Cuadrado>
+                    <com.sozpic.miniland.componentes.TextViewGotham android:textSize="@dimen/fuente_menu" android:textColor="#ffffff" android:gravity="center" android:id="@+id/menu_text_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/separacionhome" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <com.sozpic.miniland.componentes.Cuadrado android:layout_width="match_parent" android:layout_height="match_parent">
+                        <ImageView android:layout_gravity="center" android:id="@+id/x7" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/icono_mypregnancy" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+                    </com.sozpic.miniland.componentes.Cuadrado>
+                    <com.sozpic.miniland.componentes.TextViewGotham android:textSize="@dimen/fuente_menu" android:textColor="#ffffff" android:gravity="center" android:id="@+id/menu_text_my_pregnancy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/separacionhome" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/l3" android:layout_width="match_parent" android:layout_height="match_parent">
+                <RelativeLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <com.sozpic.miniland.componentes.Cuadrado android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                        <ImageView android:layout_gravity="center" android:id="@+id/x8" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/icono_emybuddy" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+                    </com.sozpic.miniland.componentes.Cuadrado>
+                    <com.sozpic.miniland.componentes.TextViewGotham android:textSize="@dimen/fuente_menu" android:textColor="#ffffff" android:gravity="center" android:id="@+id/menu_text_buddy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/separacionhome" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <com.sozpic.miniland.componentes.Cuadrado android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                        <ImageView android:layout_gravity="center" android:id="@+id/x2" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/icono_termometro" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+                    </com.sozpic.miniland.componentes.Cuadrado>
+                    <com.sozpic.miniland.componentes.TextViewGotham android:textSize="@dimen/fuente_menu" android:textColor="#ffffff" android:gravity="center" android:id="@+id/menu_text_termometro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/separacionhome" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/l4" android:layout_width="match_parent" android:layout_height="match_parent">
+                <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@+id/l7" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <com.sozpic.miniland.componentes.Cuadrado android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                        <ImageView android:layout_gravity="center" android:id="@+id/x4" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_mainmenu_my_scale" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+                    </com.sozpic.miniland.componentes.Cuadrado>
+                    <com.sozpic.miniland.componentes.TextViewGotham android:textSize="@dimen/fuente_menu" android:textColor="#ffffff" android:gravity="center" android:id="@+id/menu_text_emyscale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/separacionhome" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@+id/l8" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <com.sozpic.miniland.componentes.Cuadrado android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                        <ImageView android:layout_gravity="center" android:id="@+id/x6" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/icono_humidificador" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+                    </com.sozpic.miniland.componentes.Cuadrado>
+                    <com.sozpic.miniland.componentes.TextViewGotham android:textSize="@dimen/fuente_menu" android:textColor="#ffffff" android:gravity="center" android:id="@+id/menu_text_menu_humidificador" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/separacionhome" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/l5" android:layout_width="match_parent" android:layout_height="match_parent">
+                <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@+id/l9" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <com.sozpic.miniland.componentes.Cuadrado android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                        <ImageView android:layout_gravity="center" android:id="@+id/x9" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/icono_ficha_medica_" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+                    </com.sozpic.miniland.componentes.Cuadrado>
+                    <com.sozpic.miniland.componentes.TextViewGotham android:textSize="@dimen/fuente_menu" android:textColor="#ffffff" android:gravity="center" android:id="@+id/menu_text_ficha_medica" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/separacionhome" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@+id/l10" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <com.sozpic.miniland.componentes.Cuadrado android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                        <ImageView android:layout_gravity="center" android:id="@+id/x10" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/icono_album_fotos_" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+                    </com.sozpic.miniland.componentes.Cuadrado>
+                    <com.sozpic.miniland.componentes.TextViewGotham android:textSize="@dimen/fuente_menu" android:textColor="#ffffff" android:gravity="center" android:id="@+id/menu_text_menu_album_fotos" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/separacionhome" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/l6" android:layout_width="match_parent" android:layout_height="match_parent">
+                <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@+id/l11" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <com.sozpic.miniland.componentes.Cuadrado android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                        <ImageView android:layout_gravity="center" android:id="@+id/x11" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/icono_nutricion" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+                    </com.sozpic.miniland.componentes.Cuadrado>
+                    <com.sozpic.miniland.componentes.TextViewGotham android:textSize="@dimen/fuente_menu" android:textColor="#ffffff" android:gravity="center" android:id="@+id/menu_text_menu_nutrition" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/separacionhome" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@+id/l12" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <com.sozpic.miniland.componentes.Cuadrado android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                        <ImageView android:layout_gravity="center" android:id="@+id/x12" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/icono_world" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+                    </com.sozpic.miniland.componentes.Cuadrado>
+                    <com.sozpic.miniland.componentes.TextViewGotham android:textSize="@dimen/fuente_menu" android:textColor="#ffffff" android:gravity="center" android:id="@+id/menu_text_menu_world" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/separacionhome" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/l15" android:layout_width="match_parent" android:layout_height="match_parent">
+                <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@+id/l13" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <com.sozpic.miniland.componentes.Cuadrado android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                        <ImageView android:layout_gravity="center" android:id="@+id/x13" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/icono_calendario" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+                    </com.sozpic.miniland.componentes.Cuadrado>
+                    <com.sozpic.miniland.componentes.TextViewGotham android:textSize="@dimen/fuente_menu" android:textColor="#ffffff" android:gravity="center" android:id="@+id/menu_text_menu_calendario" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/separacionhome" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@+id/l14" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <com.sozpic.miniland.componentes.Cuadrado android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                        <ImageView android:layout_gravity="center" android:id="@+id/x14" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/icono_settings" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+                    </com.sozpic.miniland.componentes.Cuadrado>
+                    <com.sozpic.miniland.componentes.TextViewGotham android:textSize="@dimen/fuente_menu" android:textColor="#ffffff" android:gravity="center" android:id="@+id/menu_text_ajustes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/separacionhome" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

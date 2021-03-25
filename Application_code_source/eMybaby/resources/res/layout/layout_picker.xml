@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View style="@style/line_long"/>
+    <RelativeLayout android:id="@+id/rl_np" android:background="@color/white" android:paddingTop="@dimen/mg_10" android:paddingBottom="@dimen/mg_10" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <com.cuatroochenta.miniland.humidificador.test.widget.NumberPicker android:theme="@style/SampleTheme" android:id="@+id/np_choose" android:background="@null" android:layout_width="200dp" android:layout_height="108dp" android:layout_marginLeft="@dimen/mg_10" internalLayout="@layout/number_picker_with_selector_wheel"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/wh_36" android:layout_centerVertical="true">
+            <View android:background="@color/line_grey" android:layout_marginLeft="@dimen/mg_15" android:layout_marginRight="@dimen/mg_15" android:layout_alignParentTop="true" style="@style/line_long"/>
+            <View android:background="@color/line_grey" android:layout_marginLeft="@dimen/mg_15" android:layout_marginRight="@dimen/mg_15" android:layout_alignParentBottom="true" style="@style/line_long"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View style="@style/line_long"/>
+</LinearLayout>

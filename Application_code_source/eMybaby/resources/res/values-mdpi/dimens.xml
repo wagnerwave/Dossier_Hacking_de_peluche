@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="altoboton">45dp</dimen>
+    <dimen name="ancho_galeria">100dp</dimen>
+    <dimen name="ancho_medallas">110sp</dimen>
+    <dimen name="ancho_pop_up">250dp</dimen>
+    <dimen name="bienvenida_normal">20sp</dimen>
+    <dimen name="button_padding_dimen">40dp</dimen>
+    <dimen name="button_textsize_dimen">30dp</dimen>
+    <dimen name="cabecera_textsize_dimen">48sp</dimen>
+    <dimen name="foto">120sp</dimen>
+    <dimen name="imagenes_icono">50dp</dimen>
+    <dimen name="imagenes_icono_camara_h">41dp</dimen>
+    <dimen name="imagenes_icono_camara_w">50dp</dimen>
+    <dimen name="margin_dimen">20dp</dimen>
+    <dimen name="menuz">100dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="separador_izquierdo">35sp</dimen>
+    <dimen name="spacing">5dp</dimen>
+    <dimen name="textos_min_textsize_dimen">30sp</dimen>
+    <dimen name="textos_textsize_dimen">36sp</dimen>
+</resources>

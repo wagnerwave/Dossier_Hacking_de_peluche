@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/bg_grey_when_selected" android:paddingLeft="20dp" android:paddingTop="8dp" android:paddingRight="20dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="12sp" android:textColor="#6d6e6f" android:id="@+id/item_medical_data_text_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Semana 29+1 / 20-09-16"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+        <TextView android:textSize="18sp" android:textColor="#00bea4" android:ellipsize="end" android:id="@+id/item_medical_data_text_fl" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="52.4mm" android:singleLine="true" android:layout_weight="1"/>
+        <TextView android:textSize="18sp" android:textColor="#00bea4" android:ellipsize="end" android:id="@+id/item_medical_data_text_hc" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="73.4mm" android:singleLine="true" android:layout_weight="1"/>
+        <TextView android:textSize="18sp" android:textColor="#00bea4" android:ellipsize="end" android:id="@+id/item_medical_data_text_ac" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="248.5mm" android:singleLine="true" android:layout_weight="1"/>
+        <TextView android:textSize="18sp" android:textColor="#00bea4" android:ellipsize="end" android:id="@+id/item_medical_data_text_efw" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="1369g" android:singleLine="true" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

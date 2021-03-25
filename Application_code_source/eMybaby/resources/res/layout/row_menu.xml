@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/image" android:layout_width="@dimen/menu_image_width" android:layout_height="@dimen/menu_image_height" android:src="@drawable/ic_menu_lateral_home" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+    <View android:background="@color/menu_lateral_list_divider" android:layout_width="2dp" android:layout_height="match_parent" android:layout_alignTop="@+id/image" android:layout_alignBottom="@+id/image"/>
+    <View android:background="@color/menu_lateral_list_divider" android:layout_width="2dp" android:layout_height="match_parent" android:layout_alignTop="@+id/image" android:layout_alignRight="@+id/image" android:layout_alignBottom="@+id/image"/>
+    <ImageView android:id="@+id/flecha" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="10dp" android:src="@drawable/flecha_menu" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <com.sozpic.miniland.componentes.TextViewGotham android:textSize="@dimen/fuente_menu" android:textColor="#133441" android:gravity="center_vertical" android:id="@+id/topmenu_section_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="operation" android:layout_toLeftOf="@+id/flecha" android:layout_toRightOf="@+id/image" android:layout_centerVertical="true"/>
+</RelativeLayout>

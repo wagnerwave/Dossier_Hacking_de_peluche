@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="#000000" android:id="@+id/txtEventType" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <TextView android:textColor="#999999" android:id="@+id/txtEventTime" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="#000000" android:id="@+id/txtResolution" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" / "/>
+                <TextView android:id="@+id/live_view_fps" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textColor="#000000" android:id="@+id/txtFrameRate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" / "/>
+                <TextView android:id="@+id/live_view_bps" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textColor="#000000" android:id="@+id/txtBitRate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/live_view_frame_ratio" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textColor="#000000" android:id="@+id/txtIncompleteFrameCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" / "/>
+                <TextView android:textColor="#000000" android:id="@+id/txtFrameCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/monitorLayout" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="2">
+        <com.tutk.IOTC.Monitor android:id="@+id/monitor" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

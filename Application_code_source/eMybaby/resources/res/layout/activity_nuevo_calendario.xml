@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#e3deff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sozpic.miniland.TopMenuActivity android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/cabecera" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="@dimen/alto_menu_head"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/footer" android:layout_below="@+id/cabecera">
+        <LinearLayout android:orientation="vertical" android:id="@+id/x" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/fuente_menu" android:textStyle="normal" android:textColor="#404041" android:gravity="center" android:layout_gravity="center" android:id="@+id/header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+                <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <EditText android:textSize="@dimen/fuente_home" android:textColorHint="#404041" android:id="@+id/et_asunto" android:background="#ffffff" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp"/>
+            </LinearLayout>
+            <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:orientation="vertical" android:background="#ffffff" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="left" android:orientation="horizontal" android:id="@+id/x2" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="left" android:layout_gravity="center" android:id="@+id/todo_title" android:padding="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <CheckBox android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/todo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/check_box_selector" android:text=""/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="#ffffff" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:textSize="@dimen/fuente_home" android:textColor="#404041" android:textColorHint="#404041" android:id="@+id/et_fecha" android:background="#ffffff" android:padding="5dp" android:focusable="false" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1" android:inputType="none"/>
+                <ImageView android:layout_gravity="center" android:id="@+id/tick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/tick_fecha"/>
+            </LinearLayout>
+            <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/nuevo_calendario_starttime_container" android:background="#ffffff" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:textSize="@dimen/fuente_home" android:textColor="#404041" android:textColorHint="#404041" android:id="@+id/et_tiempo" android:background="#ffffff" android:padding="5dp" android:focusable="false" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1" android:inputType="none"/>
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/tick_fecha"/>
+            </LinearLayout>
+            <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/lfin" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="5dp"/>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="#ffffff" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <EditText android:textSize="@dimen/fuente_home" android:textColor="#404041" android:textColorHint="#404041" android:id="@+id/et_fecha2" android:background="#ffffff" android:padding="5dp" android:focusable="false" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1" android:inputType="none"/>
+                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/tick_fecha"/>
+                </LinearLayout>
+                <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/nuevo_calendario_endtime_container" android:background="#ffffff" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <EditText android:textSize="@dimen/fuente_home" android:textColor="#404041" android:textColorHint="#404041" android:id="@+id/et_tiempo2" android:background="#ffffff" android:padding="5dp" android:focusable="false" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1" android:inputType="none"/>
+                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/tick_fecha"/>
+                </LinearLayout>
+                <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp"/>
+            </LinearLayout>
+            <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="20dp"/>
+            <LinearLayout android:orientation="vertical" android:background="#ffffff" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:textSize="@dimen/fuente_home" android:textColorHint="#404041" android:id="@+id/et_desc" android:background="#ffffff" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1" android:singleLine="true"/>
+            </LinearLayout>
+            <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginBottom="10dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/nuevo_calendario_add_to_calendar_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <LinearLayout android:gravity="left" android:orientation="horizontal" android:background="@android:color/white" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="left" android:layout_gravity="center" android:id="@+id/nuevo_calendario_add_to_calendar_title" android:padding="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <CheckBox android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/nuevo_calendario_add_to_calendar_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/check_box_selector" android:text=""/>
+                </LinearLayout>
+                <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/footer" android:background="#ebabd0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textSize="@dimen/fuente_home" android:textColor="#ffffff" android:id="@+id/btnCancel" android:background="#ff1865" android:padding="@dimen/margen_imagenes" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:textSize="@dimen/fuente_home" android:textColor="#ffffff" android:id="@+id/bebeguardar" android:background="#00c1a5" android:padding="@dimen/margen_imagenes" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

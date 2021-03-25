@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/app_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/action_bar_layout" layout="@layout/toolbar_top_view"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="32dp" android:layout_below="@+id/action_bar_layout">
+        <TextView android:textSize="@dimen/ts_14" android:textColor="@color/colorNormal" android:gravity="center" android:id="@+id/tv_network_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mg_16"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="50dp"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp"/>
+        <TextView android:textSize="@dimen/ts_13" android:textColor="@color/colorHighlight" android:id="@+id/add_device_tip_help" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32dp"/>
+    </LinearLayout>
+    <Button android:textSize="@dimen/ts_15" android:id="@+id/tv_bottom_button" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginLeft="@dimen/mg_15" android:layout_marginRight="@dimen/mg_15" android:layout_marginBottom="@dimen/mg_16" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

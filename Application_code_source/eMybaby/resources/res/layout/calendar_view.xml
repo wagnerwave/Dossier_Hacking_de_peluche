@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/caldroid_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/calendar_title_view" android:background="#e3deff" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/calendar_left_arrow" android:background="@drawable/left_arrow" android:layout_width="@dimen/alto_menu_b" android:layout_height="@dimen/alto_menu_b" android:layout_alignParentLeft="true"/>
+        <TextView android:textSize="@dimen/fuente_menu" android:gravity="center_horizontal" android:id="@+id/calendar_month_year_textview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_toLeftOf="@+id/calendar_right_arrow" android:layout_toRightOf="@+id/calendar_left_arrow" android:textIsSelectable="true"/>
+        <Button android:id="@+id/calendar_right_arrow" android:background="@drawable/right_arrow" android:layout_width="@dimen/alto_menu_b" android:layout_height="@dimen/alto_menu_b" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <GridView android:id="@+id/weekday_gridview" android:background="#e3deff" android:layout_width="match_parent" android:layout_height="wrap_content" android:stretchMode="columnWidth" android:numColumns="7"/>
+    <com.antonyt.infiniteviewpager.InfiniteViewPager android:id="@+id/months_infinite_pager" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-10dp"/>
+</LinearLayout>

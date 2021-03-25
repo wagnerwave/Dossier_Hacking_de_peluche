@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sozpic.miniland.TopMenuActivity android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/cabecera" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="@dimen/alto_menu_head"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/x2" android:background="@drawable/fondo_camara" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_below="@+id/cabecera">
+        <ImageView android:layout_gravity="center" android:id="@+id/reproducir" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:src="@drawable/op11"/>
+        <TextView android:textSize="@dimen/fuente_play" android:textColor="#ffffff" android:gravity="center" android:id="@+id/reproducir_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/streaming_text_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/x2">
+        <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="center" android:id="@+id/mensaje" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=""/>
+        <ImageView android:layout_gravity="center" android:id="@+id/streaming_help_icon" android:padding="@dimen/margen_imagenes" android:layout_width="@dimen/alto_menu_b" android:layout_height="@dimen/alto_menu_b" android:src="@drawable/ic_help_menu"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/player" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/x2">
+        <VideoView android:id="@+id/surface_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

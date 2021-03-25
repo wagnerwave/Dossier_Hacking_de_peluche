@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/white" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/baby_measure_datetime_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp">
+        <TextView android:textSize="@dimen/fuente_home" android:textColor="@color/text_color" android:id="@+id/baby_measure_date" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/fuente_home2" android:textColor="#9bb1b3" android:id="@+id/baby_measure_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_below="@+id/baby_measure_date"/>
+    </RelativeLayout>
+    <com.sozpic.miniland.componentes.TextViewHelvetica android:textSize="@dimen/fuente_grow" android:textColor="#637d85" android:gravity="right" android:id="@+id/baby_measure_value" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/baby_measure_datetime_container"/>
+</RelativeLayout>

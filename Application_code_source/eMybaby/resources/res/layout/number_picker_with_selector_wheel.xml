@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <EditText android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="@dimen/ts_18" android:textColor="@color/grey" android:gravity="center" android:id="@+id/np__numberpicker_input" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:editable="false"/>
+    <androidx.appcompat.widget.AppCompatImageButton android:id="@+id/np__increment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/logo_login_app"/>
+    <androidx.appcompat.widget.AppCompatImageButton android:id="@+id/np__decrement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/logo_login_app"/>
+</merge>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sozpic.miniland.TopMenuActivity android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/my_pregnancy_fragment_container_toolbar" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="@dimen/alto_menu_head"/>
+    <FrameLayout android:id="@+id/my_pregnancy_fragment_container_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+    <View android:background="#ced1d2" android:layout_width="wrap_content" android:layout_height="1dp"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/my_pregnancy_fragment_container_bottombar_normal" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="55dp">
+        <ImageView android:id="@+id/my_pregnancy_fragment_container_button_ecography" android:layout_width="25dp" android:layout_height="match_parent" android:src="@drawable/ic_ecography_baby_grey_borders" android:layout_weight="1"/>
+        <ImageView android:id="@+id/my_pregnancy_fragment_container_button_rule" android:layout_width="25dp" android:layout_height="match_parent" android:src="@drawable/ic_rule" android:layout_weight="1"/>
+        <ImageView android:id="@+id/my_pregnancy_fragment_container_button_graph" android:padding="3dp" android:layout_width="25dp" android:layout_height="match_parent" android:src="@drawable/ic_graph_grey" android:layout_weight="1"/>
+        <ImageView android:id="@+id/my_pregnancy_fragment_container_button_plus" android:padding="4dp" android:visibility="gone" android:layout_width="25dp" android:layout_height="match_parent" android:src="@drawable/ic_plus_grey" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/my_pregnancy_fragment_container_bottombar_edit" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/scalable_35dp">
+        <ImageView android:id="@+id/my_pregnancy_fragment_container_button_edit" android:background="#909197" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="30dp" android:layout_height="match_parent" android:src="@drawable/ic_pen_write" android:layout_weight="1"/>
+        <ImageView android:id="@+id/my_pregnancy_fragment_container_button_delete" android:background="#00c0a3" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="30dp" android:layout_height="match_parent" android:src="@drawable/ic_trash" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

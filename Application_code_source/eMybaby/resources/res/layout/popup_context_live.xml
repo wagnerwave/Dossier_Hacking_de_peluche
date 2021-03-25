@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/borde_redondeado_blanco" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="#336699" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/silencio" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/context_altavoz_off"/>
+            <TextView android:textSize="@dimen/fuente_home" android:textColor="#00bfa5" android:gravity="center" android:layout_gravity="center" android:id="@+id/txtSilencio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="2"/>
+        </LinearLayout>
+        <View android:background="#eeeeee" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/escuchando" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/context_altavoz_on"/>
+            <TextView android:textSize="@dimen/fuente_home" android:textColor="#00bfa5" android:gravity="center" android:layout_gravity="center" android:id="@+id/txtListening" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="2"/>
+        </LinearLayout>
+        <View android:background="#eeeeee" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/hablando" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/context_hablar"/>
+            <TextView android:textSize="@dimen/fuente_home" android:textColor="#00bfa5" android:gravity="center" android:layout_gravity="center" android:id="@+id/txtTalking" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="2"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

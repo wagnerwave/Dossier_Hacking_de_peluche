@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sozpic.miniland.TopMenuActivity android:id="@+id/pregnancy_finished_toolbar" android:layout_width="match_parent" android:layout_height="@dimen/alto_menu_head"/>
+    <TextView android:textSize="30sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/pregnancy_finished_button_consultar_anteriores_embarazos" android:background="#ff5a8b" android:clickable="true" android:layout_width="match_parent" android:layout_height="0dp" android:text="Consultar anteriores embarazos" android:layout_weight="1"/>
+    <TextView android:textSize="30sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/pregnancy_finished_button_estoy_embarazada_de_nuevo" android:background="#ff8bb1" android:clickable="true" android:layout_width="match_parent" android:layout_height="0dp" android:text="Estoy embarazada de nuevo" android:layout_weight="1"/>
+</LinearLayout>

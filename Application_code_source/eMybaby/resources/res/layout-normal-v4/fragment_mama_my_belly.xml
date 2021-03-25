@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/rl_mama_my_belly_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" layout="@layout/layout_my_belly_header"/>
+    <RelativeLayout android:id="@+id/rl_mama_my_belly_bottom" android:background="@color/mama_menu_options_color" android:layout_width="match_parent" android:layout_height="85dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="18sp" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/tv_mama_my_belly_img_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:singleLine="true" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_mama_my_belly_img_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/tv_mama_my_belly_img_title" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <com.cuatroochenta.miniland.utils.CustomViewPager android:id="@+id/vp_my_belly" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/rl_mama_my_belly_bottom" android:layout_below="@+id/rl_mama_my_belly_header"/>
+    <ImageView android:id="@+id/img_mama_my_belly_add_new" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginTop="15dp" android:layout_marginRight="15dp" android:src="@drawable/ic_circular_plus_green" android:scaleType="centerInside" android:layout_below="@+id/rl_mama_my_belly_header" android:layout_alignParentRight="true"/>
+</RelativeLayout>

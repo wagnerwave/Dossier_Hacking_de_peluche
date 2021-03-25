@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sozpic.miniland.video.TopMenuActivityVideo android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/cabecera" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="@dimen/alto_menu_head"/>
+    <ScrollView android:background="@drawable/cuadrorosa" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/edit_camera_degradado" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/imagencamara" android:layout_width="@dimen/camara_mini" android:layout_height="@dimen/camara_mini" android:layout_marginLeft="20dp" android:src="@drawable/edit_image"/>
+                <TextView android:textSize="@dimen/fuente_home" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center" android:id="@+id/udid" android:padding="5dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:background="@drawable/boton_redondeado_blanco" android:padding="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                    <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="center_vertical" android:id="@+id/txtUID" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="2"/>
+                    <EditText android:textSize="@dimen/fuente_home" android:id="@+id/edtUID" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:singleLine="true" android:maxLength="20" android:capitalize="characters" android:layout_weight="1">
+                        <requestFocus/>
+                    </EditText>
+                </LinearLayout>
+                <LinearLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/fuente_home" android:textColor="#333333" android:gravity="center_vertical" android:id="@+id/txtSecurityCode" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="2"/>
+                    <EditText android:textSize="@dimen/fuente_home" android:id="@+id/edtSecurityCode" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:capitalize="characters" android:layout_weight="1" android:inputType="textPassword"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:background="#ffffff" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="left" android:id="@+id/device_name" android:padding="@dimen/margen_imagenes" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <EditText android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="right|center_vertical|center_horizontal|center" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/edtNickName" android:background="#ffffff" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:capitalize="characters" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+                <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/margen_imagenes" android:paddingBottom="@dimen/margen_imagenes" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <Button android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="left" android:id="@+id/btnAdvanced" android:background="@null" android:padding="@dimen/margen_imagenes" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_weight="1"/>
+                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/flecha" android:layout_width="@dimen/imagen_tick_w" android:layout_height="@dimen/imagen_tick_h" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:src="@drawable/fecharoja2"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/fuente_home" android:textColor="#ffffff" android:id="@+id/btnCancel" android:background="#ff1865" android:padding="@dimen/margen_imagenes" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+        <Button android:textSize="@dimen/fuente_home" android:textColor="#ffffff" android:id="@+id/btnOK" android:background="#00c1a5" android:padding="@dimen/margen_imagenes" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/pregnancy_sound_list_root" android:layout_width="match_parent" android:layout_height="@dimen/player_item_height">
+    <TextView android:textSize="@dimen/player_item_tracknum_textsize" android:textColor="@color/pink_dark" android:gravity="center" android:layout_gravity="center" android:id="@+id/pregnancy_sounds_item_icon_text" android:layout_width="@dimen/player_item_height" android:layout_height="@dimen/player_item_height" android:lines="1"/>
+    <View android:background="@color/list_divider" android:layout_width="1dp" android:layout_height="@dimen/player_item_height" android:layout_toRightOf="@+id/pregnancy_sounds_item_icon_text"/>
+    <FrameLayout android:id="@+id/pregnancy_sounds_item_right_container" android:layout_width="@dimen/player_item_height" android:layout_height="@dimen/player_item_height" android:layout_alignParentRight="true">
+        <ImageView android:layout_gravity="center" android:id="@+id/pregnancy_sounds_item_right_image" android:layout_width="@dimen/player_control_icons_size" android:layout_height="@dimen/player_control_icons_size" android:src="@drawable/ic_share_selector"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/pregnancy_sounds_item_right_container" android:layout_toRightOf="@+id/pregnancy_sounds_item_icon_text">
+        <TextView android:textSize="@dimen/player_item_textsize" android:textColor="@color/default_text_color" android:ellipsize="end" android:id="@+id/pregnancy_sounds_item_item_name" android:layout_width="match_parent" android:layout_height="0dp" android:lines="1" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/player_control_textsize" android:textColor="@color/grey" android:id="@+id/pregnancy_sounds_item_date" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/player_control_textsize" android:textColor="@color/grey" android:id="@+id/pregnancy_sounds_item_duration" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

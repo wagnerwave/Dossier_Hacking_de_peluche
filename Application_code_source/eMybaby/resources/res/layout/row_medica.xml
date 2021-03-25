@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_weight="1">
+        <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:id="@+id/texto1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:lines="1"/>
+        <TextView android:textSize="@dimen/fuente_home2" android:textColor="#66d9c8" android:id="@+id/texto4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:lines="1"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_marginLeft="0dp" android:layout_weight="2">
+        <TextView android:textSize="@dimen/fuente_home" android:textColor="#666666" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="center_vertical" android:id="@+id/texto3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:lines="1"/>
+        <TextView android:textSize="@dimen/fuente_home2" android:textColor="#66d9c8" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="center_vertical" android:id="@+id/texto2" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.sozpic.miniland.video.TopMenuActivityVideo android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/cabeceras" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="@dimen/alto_menu_head"/>
+        <RelativeLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textColor="#333333" android:id="@+id/bfull" android:background="@drawable/fulls" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="4dp" android:layout_marginRight="4dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/pnlCameraInfo" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="5dp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="#000000" android:id="@+id/txtConnectionStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" / "/>
+                <TextView android:textColor="#000000" android:id="@+id/txtConnectionMode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="#000000" android:id="@+id/txtResolution" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" / "/>
+                <TextView android:id="@+id/live_view_fps" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textColor="#000000" android:id="@+id/txtFrameRate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" / "/>
+                <TextView android:id="@+id/live_view_bps" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textColor="#000000" android:id="@+id/txtBitRate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+            </LinearLayout>
+            <LinearLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/live_view_onlinenum_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textColor="#000000" android:id="@+id/txtOnlineNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" / "/>
+                <TextView android:id="@+id/live_view_frame_ratio" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textColor="#000000" android:id="@+id/txtIncompleteFrameCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" / "/>
+                <TextView android:textColor="#000000" android:id="@+id/txtFrameCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.tutk.IOTC.Monitor android:id="@+id/monitor" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:background="@drawable/cuadrorosa" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+            <ImageView android:layout_width="match_parent" android:layout_height="0dp" android:src="@null" android:layout_weight="2"/>
+            <ImageView android:background="@drawable/cuadrorosa" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/fuente_menu" android:textColor="#404041" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/texto" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:maxLines="1"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/acciones" android:background="#ffffff" android:padding="2dp" android:focusable="true" android:focusableInTouchMode="true" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="60dp" android:layout_margin="2dp">
+        <Button android:textColor="#333333" android:id="@+id/bverfotos" android:background="@drawable/nover_fotos" android:focusable="true" android:clickable="true" android:layout_width="@dimen/imagenes_icono_camara_w" android:layout_height="@dimen/imagenes_icono_camara_h" android:layout_marginLeft="10dp"/>
+        <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        <Button android:textColor="#333333" android:id="@+id/bhacerfoto" android:background="@drawable/nohacer_foto" android:padding="30dp" android:focusable="true" android:clickable="true" android:layout_width="@dimen/imagenes_icono_camara_w" android:layout_height="@dimen/imagenes_icono_camara_h" android:layout_marginLeft="2dp"/>
+        <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        <Button android:textColor="#333333" android:id="@+id/bsonido" android:background="@drawable/altavoz_activo" android:padding="30dp" android:focusable="true" android:clickable="true" android:layout_width="@dimen/imagenes_icono_camara_w" android:layout_height="@dimen/imagenes_icono_camara_h" android:layout_marginRight="10dp"/>
+        <View android:visibility="gone" android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        <Button android:textColor="#333333" android:id="@+id/bhablar" android:background="@drawable/hablar_no" android:padding="10dp" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="@dimen/imagenes_icono_camara_w" android:layout_height="@dimen/imagenes_icono_camara_h" android:layout_marginLeft="2dp"/>
+    </LinearLayout>
+</LinearLayout>

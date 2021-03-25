@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sozpic.miniland.TopMenuActivity android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/statistics_common_header" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="@dimen/alto_menu_head"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/statistics_baby_header" android:background="@drawable/bg_scale_top" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/statistics_common_header">
+        <com.cuatroochenta.commons.widget.CircularImageView android:layout_gravity="center" android:id="@+id/statistics_baby_header_image" android:layout_width="@dimen/alto_circulo" android:layout_height="@dimen/alto_circulo"/>
+        <TextView android:textSize="@dimen/fuente_menu" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/statistics_baby_header_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/statistics_button_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/statistics_baby_header">
+        <RelativeLayout android:id="@+id/statistics_latest_container" android:background="@drawable/tabbar_myscale_background_selector" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="@dimen/fuente_home" android:textColor="@color/tabbar_myscale_textcolor_selector" android:id="@+id/statistics_latest_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/fuente_home2" android:textColor="@color/tabbar_myscale_textcolor_selector" android:id="@+id/statistics_latest_subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/statistics_latest_title"/>
+        </RelativeLayout>
+        <View android:background="@color/list_divider" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <RelativeLayout android:id="@+id/statistics_month_container" android:background="@drawable/tabbar_myscale_background_selector" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="@dimen/fuente_home" android:textColor="@color/tabbar_myscale_textcolor_selector" android:id="@+id/statistics_month_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/fuente_home2" android:textColor="@color/tabbar_myscale_textcolor_selector" android:id="@+id/statistics_month_subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/statistics_month_title"/>
+        </RelativeLayout>
+        <View android:background="@color/list_divider" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <RelativeLayout android:id="@+id/statistics_data_container" android:background="@drawable/tabbar_myscale_background_selector" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="@dimen/fuente_home" android:textColor="@color/tabbar_myscale_textcolor_selector" android:id="@+id/statistics_data_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/fuente_home2" android:textColor="@color/tabbar_myscale_textcolor_selector" android:id="@+id/statistics_data_subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/statistics_data_title"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@+id/statistics_separator" android:background="@color/list_divider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/statistics_button_container"/>
+    <ListView android:id="@+id/statitstics_list_listview" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@color/list_divider" android:dividerHeight="1dp" android:layout_below="@+id/statistics_separator"/>
+    <RelativeLayout android:id="@+id/statistics_graph_web_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/statistics_separator">
+        <WebView android:id="@+id/statistics_graph_web" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:id="@+id/statitstics_graph_fullscreen" android:layout_width="@dimen/imagenes_icono" android:layout_height="@dimen/imagenes_icono" android:layout_margin="@dimen/separacionhome" android:src="@drawable/ic_action_full_screen" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</RelativeLayout>

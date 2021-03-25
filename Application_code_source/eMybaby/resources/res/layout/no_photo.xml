@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <ImageView android:layout_gravity="center" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_launcher"/>
+        <ImageView android:layout_gravity="center" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/nuevacab"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/imgNoPhotos" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:drawable/ic_menu_gallery" android:layout_alignParentLeft="false"/>
+        <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="24sp" android:id="@+id/txtNoPhotos" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/imgNoPhotos" android:layout_alignBottom="@+id/imgNoPhotos"/>
+        <TextView android:id="@+id/txtNoPhotosDetail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_below="@+id/txtNoPhotos" android:layout_alignParentLeft="false"/>
+    </LinearLayout>
+</RelativeLayout>

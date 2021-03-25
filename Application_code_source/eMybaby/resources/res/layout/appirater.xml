@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="10dp" android:layout_width="300dp" android:layout_height="match_parent">
+    <TextView android:id="@+id/message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/rate_message"/>
+    <Button android:textColor="#ffffff" android:layout_gravity="center" android:id="@+id/rate" android:background="@drawable/button_blue" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/rate_button"/>
+    <Button android:textColor="#ffffff" android:layout_gravity="center" android:id="@+id/rateLater" android:background="@drawable/button_blue" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/rate_remind_later"/>
+    <Button android:textColor="#ffffff" android:layout_gravity="center" android:id="@+id/cancel" android:background="@drawable/button_blue" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/rate_no_button"/>
+</LinearLayout>

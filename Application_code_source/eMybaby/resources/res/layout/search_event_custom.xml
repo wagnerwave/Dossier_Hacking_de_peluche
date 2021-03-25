@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="@dimen/alto_menu">
+        <ImageView android:id="@+id/menu" android:layout_width="@dimen/alto_menu_b" android:layout_height="@dimen/alto_menu_b" android:src="@mipmap/ic_launcher" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/img" android:layout_width="wrap_content" android:layout_height="@dimen/alto_menu_b" android:src="@drawable/nuevacab" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/fondocab" android:layout_width="match_parent" android:layout_height="10dp" android:src="@drawable/fondo_cab" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+        <TextView android:textSize="@dimen/fuente_home" android:textColor="#000000" android:id="@+id/txtSearchFrom" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textSize="@dimen/fuente_home" android:id="@+id/btnStartDate" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="2011/11/14" android:layout_weight="1"/>
+            <Button android:textSize="@dimen/fuente_home" android:id="@+id/btnStartTime" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="17:00 PM" android:layout_weight="2"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+        <TextView android:textSize="@dimen/fuente_home" android:textColor="#000000" android:id="@+id/txtSearchTo" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textSize="@dimen/fuente_home" android:id="@+id/btnStopDate" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="2011/11/15" android:layout_weight="1"/>
+            <Button android:textSize="@dimen/fuente_home" android:id="@+id/btnStopTime" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="07:00 PM" android:layout_weight="2"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+        <TextView android:textSize="@dimen/fuente_home" android:textColor="#000000" android:id="@+id/txtSearchEventType" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Spinner android:id="@+id/spinEventType" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginTop="20dp">
+        <Button android:textSize="@dimen/fuente_home" android:id="@+id/btnOK" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="3dp" android:layout_marginTop="5dp" android:layout_marginBottom="3dp" android:layout_weight="1"/>
+        <Button android:textSize="@dimen/fuente_home" android:id="@+id/btnCancel" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp" android:layout_marginRight="3dp" android:layout_marginBottom="3dp" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

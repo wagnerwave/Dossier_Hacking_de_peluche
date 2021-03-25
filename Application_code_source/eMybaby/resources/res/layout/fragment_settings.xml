@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/settings" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/settings_title_textsize" android:textColor="@color/default_text_color" android:gravity="right" android:id="@+id/settings_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_marginBottom="10dp"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@+id/settings_profile" layout="@layout/item_settings"/>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="40dp"/>
+            <include android:id="@+id/settings_scaleunit" layout="@layout/item_settings"/>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="40dp"/>
+            <include android:id="@+id/settings_version" layout="@layout/item_settings"/>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="40dp"/>
+            <include android:id="@+id/settings_contact" layout="@layout/item_settings"/>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="40dp"/>
+            <include android:id="@+id/settings_not_medical_device" layout="@layout/item_settings"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

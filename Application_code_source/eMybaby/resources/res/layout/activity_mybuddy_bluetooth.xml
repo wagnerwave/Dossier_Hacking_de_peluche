@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/bg_light_purple" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sozpic.miniland.TopMenuActivity android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/buddy_bt_common_header" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="@dimen/alto_menu_head" android:layout_alignParentTop="true"/>
+    <Button android:textSize="@dimen/fuente_home" android:id="@+id/buddy_bt_search" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/separacionhome" android:layout_alignParentBottom="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/buddy_bt_paired_devices" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/buddy_bt_common_header"/>
+    <ListView android:id="@+id/buddy_bt_device_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/buddy_bt_search" android:layout_below="@+id/buddy_bt_paired_devices"/>
+</RelativeLayout>

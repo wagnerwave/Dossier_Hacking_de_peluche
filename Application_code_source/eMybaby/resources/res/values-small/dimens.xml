@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="altoboton">45dp</dimen>
+    <dimen name="ancho_galeria">100dp</dimen>
+    <dimen name="ancho_medallas">60sp</dimen>
+    <dimen name="ancho_pop_up">250dp</dimen>
+    <dimen name="bienvenida_normal">18sp</dimen>
+    <dimen name="button_padding_dimen">40dp</dimen>
+    <dimen name="button_textsize_dimen">30dp</dimen>
+    <dimen name="cabecera_textsize_dimen">48sp</dimen>
+    <dimen name="foto">80sp</dimen>
+    <dimen name="fuente_menu">16dp</dimen>
+    <dimen name="fuente_tap">20dp</dimen>
+    <dimen name="imagenes_icono">30dp</dimen>
+    <dimen name="imagenes_icono_camara_h">41dp</dimen>
+    <dimen name="imagenes_icono_camara_w">50dp</dimen>
+    <dimen name="margin_dimen">20dp</dimen>
+    <dimen name="menuz">50dp</dimen>
+    <dimen name="mtrl_alert_dialog_background_inset_bottom">24dp</dimen>
+    <dimen name="mtrl_alert_dialog_background_inset_top">24dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="separador_izquierdo">40sp</dimen>
+    <dimen name="spacing">5dp</dimen>
+    <dimen name="textos_min_textsize_dimen">30sp</dimen>
+    <dimen name="textos_textsize_dimen">36sp</dimen>
+</resources>

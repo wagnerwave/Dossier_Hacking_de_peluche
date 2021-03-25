@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sozpic.miniland.TopMenuActivity android:id="@+id/appointment_list_toolbar" android:layout_width="match_parent" android:layout_height="@dimen/alto_menu_head"/>
+    <include android:id="@+id/appointment_list_header" layout="@layout/layout_pregnancy_subsection_header"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/appointment_list_button_anadir_nueva_cita_medica" android:background="#9d5274" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="10dp" android:layout_marginLeft="10dp" android:src="@drawable/ic_plus_white"/>
+        <TextView android:textSize="11sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@+id/appointment_list_button_anadir_nueva_cita_medica_title" android:paddingTop="6dp" android:paddingRight="40dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="7dp"/>
+    </LinearLayout>
+    <ListView android:id="@+id/appointment_list_listview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

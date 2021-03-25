@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:id="@+id/texto3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginTop="5dp" android:layout_marginRight="8dp" android:lines="1" android:layout_weight="1"/>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_marginLeft="0dp" android:layout_weight="1">
+        <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:ellipsize="end" android:id="@+id/texto1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2"/>
+        <TextView android:textSize="@dimen/fuente_home" android:textColor="#a27ad2" android:ellipsize="end" android:id="@+id/texto2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2"/>
+    </LinearLayout>
+</LinearLayout>

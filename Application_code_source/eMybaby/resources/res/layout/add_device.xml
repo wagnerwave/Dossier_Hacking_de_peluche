@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sozpic.miniland.video.TopMenuActivityVideo android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/cabecera" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="@dimen/alto_menu_head"/>
+    <ScrollView android:background="#ebabd0" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:background="#fac2de" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/fuente_menu" android:textColor="#404041" android:gravity="center" android:layout_gravity="center" android:id="@+id/header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="#ebabd0" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <EditText android:textColor="#404041" android:textColorHint="#404041" android:id="@+id/edtNickName" android:background="@drawable/boton_redondeado_blanco" android:padding="15dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp" android:singleLine="true" android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <EditText android:textColor="#404041" android:textColorHint="#404041" android:id="@+id/edtUID" android:background="@drawable/boton_redondeado_blanco" android:padding="15dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp" android:singleLine="true" android:maxLength="20" android:capitalize="characters" android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp" android:layout_weight="1">
+                        <Button android:textSize="@dimen/fuente_home" android:textColor="#ffffff" android:id="@+id/btnScan" android:background="@drawable/boton_redondeado_rosa" android:padding="@dimen/margen_imagenes" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+                        <Button android:textSize="@dimen/fuente_home" android:id="@+id/btnSearch" android:background="@drawable/boton_tipo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/fuente_home" android:textColor="#333333" android:gravity="center_vertical" android:id="@+id/security_code_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="2"/>
+                    <EditText android:id="@+id/edtSecurityCode" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="admin" android:singleLine="true" android:capitalize="characters" android:layout_weight="1" android:inputType="textPassword"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/footer" android:background="#ebabd0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textSize="@dimen/fuente_home" android:textColor="#ffffff" android:id="@+id/btnCancel" android:background="#ff1865" android:padding="@dimen/margen_imagenes" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:textSize="@dimen/fuente_home" android:textColor="#ffffff" android:id="@+id/btnOK" android:background="#00c1a5" android:padding="@dimen/margen_imagenes" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

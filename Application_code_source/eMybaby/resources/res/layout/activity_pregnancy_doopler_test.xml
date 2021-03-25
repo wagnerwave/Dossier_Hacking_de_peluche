@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:padding="15dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textColor="@color/red" android:id="@+id/service_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/service_status"/>
+        <TextView android:textColor="@color/red" android:id="@+id/service_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/debug_info" android:layout_weight="1"/>
+        <TextView android:id="@+id/infor" android:background="@color/green" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/info_area" android:layout_weight="1"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <Button android:id="@+id/openBt" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/openBt" android:layout_weight="1"/>
+            <Button android:id="@+id/searchBt" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/searchBt" android:layout_weight="1"/>
+            <Button android:id="@+id/connectBt" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/connect_Bt" android:layout_weight="1"/>
+            <Button android:id="@+id/tocoBt" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/tocoReset" android:layout_weight="1"/>
+            <Button android:id="@+id/recordBt" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/record" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

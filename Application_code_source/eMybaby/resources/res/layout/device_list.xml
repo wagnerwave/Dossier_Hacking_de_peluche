@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/img" android:background="@drawable/default_camara_image" android:layout_width="@dimen/imagen_camara_listado_w" android:layout_height="@dimen/imagen_camara_listado_h" android:layout_marginLeft="6dp" android:layout_marginTop="3dp" android:layout_marginRight="3dp" android:layout_marginBottom="3dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:layout_weight="1">
+        <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1"/>
+        <TextView android:textSize="@dimen/fuente_home" android:textColor="#ff74a3" android:id="@+id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2"/>
+        <TextView android:textSize="@dimen/fuente_home" android:textColor="#ff74a3" android:id="@+id/info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/eventLayout" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center" android:id="@+id/more" android:layout_width="@dimen/imagen_info" android:layout_height="@dimen/imagen_info" android:src="@drawable/infogris"/>
+    </FrameLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/flecha" android:layout_width="@dimen/imagen_tick_w" android:layout_height="@dimen/imagen_tick_h" android:layout_marginLeft="20dp" android:layout_marginRight="10dp" android:src="@drawable/fecharoja2"/>
+</LinearLayout>

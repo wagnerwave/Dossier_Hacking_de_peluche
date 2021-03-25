@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/list_selector_header" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="left" android:layout_gravity="left" android:id="@+id/list_header" android:padding="10dp" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</FrameLayout>

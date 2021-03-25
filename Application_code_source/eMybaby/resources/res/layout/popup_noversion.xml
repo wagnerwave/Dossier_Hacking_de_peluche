@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/fondo_popup_verde" android:layout_width="250dp" android:layout_height="wrap_content">
+    <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:id="@+id/texto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_centerHorizontal="true"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/controlador" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+        <Button android:textSize="14dp" android:textColor="#000000" android:id="@+id/ccancel" android:background="@drawable/fondo_normal" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/texto"/>
+    </LinearLayout>
+</LinearLayout>

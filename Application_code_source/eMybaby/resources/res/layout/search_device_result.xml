@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="@dimen/alto_menu">
+        <ImageView android:id="@+id/menu" android:layout_width="@dimen/alto_menu_b" android:layout_height="@dimen/alto_menu_b" android:src="@mipmap/ic_launcher" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/img" android:layout_width="wrap_content" android:layout_height="@dimen/alto_menu_b" android:src="@drawable/nuevacab" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/fondocab" android:layout_width="match_parent" android:layout_height="10dp" android:src="@drawable/fondo_cab" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_weight="1">
+        <TextView android:textSize="18sp" android:textColor="#000000" android:id="@+id/uid" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/ip" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

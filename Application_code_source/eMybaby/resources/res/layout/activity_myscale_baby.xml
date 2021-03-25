@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sozpic.miniland.TopMenuActivity android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/scale_manager_common_header" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="@dimen/alto_menu_head" android:layout_alignParentTop="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/scale_manager_common_header">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/scale_manager_header" android:background="@drawable/bg_scale_top" android:padding="10dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <FrameLayout android:layout_gravity="center" android:layout_width="@dimen/myscale_baby_header_image" android:layout_height="@dimen/myscale_baby_header_image">
+                <com.cuatroochenta.commons.widget.CircularImageView android:id="@+id/scale_manager_header_image" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/myscale_baby_header_padding" android:scaleType="fitCenter"/>
+                <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/bg_profile_ring"/>
+            </FrameLayout>
+            <TextView android:textSize="@dimen/fuente_menu" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/scale_manager_header_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:layout_below="@+id/scale_manager_header_image"/>
+            <TextView android:textSize="@dimen/fuente_menu" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/scale_manager_header_surname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/scale_manager_result_container" android:background="@drawable/bg_scale_bottom" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <com.sozpic.miniland.componentes.TextViewHelvetica android:textSize="@dimen/fuente_tap" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/scale_manager_new_measure" android:padding="20dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" android:layout_alignWithParentIfMissing="true"/>
+            <com.sozpic.miniland.componentes.TextViewHelvetica android:textSize="@dimen/tmpp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/scale_manager_result" android:background="@drawable/bg_white_border" android:padding="20dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_alignWithParentIfMissing="true"/>
+            <com.sozpic.miniland.componentes.TextViewHelvetica android:textSize="@dimen/fuente_menu" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/scale_manager_result_date" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_above="@+id/scale_manager_result"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/scale_manager_button_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textSize="@dimen/fuente_home" android:textColor="@android:color/white" android:id="@+id/scale_manager_new_reading" android:background="@color/red" android:padding="@dimen/margen_imagenes" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:textSize="@dimen/fuente_home" android:textColor="@android:color/white" android:id="@+id/scale_manager_add_to_record" android:background="@color/green" android:padding="@dimen/margen_imagenes" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/scale_manager_waiting" android:background="@drawable/bg_scale_waiting" android:padding="40dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.cuatroochenta.commons.widget.SquaredImageView android:id="@+id/scale_manager_waiting_image" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/baby_scale" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

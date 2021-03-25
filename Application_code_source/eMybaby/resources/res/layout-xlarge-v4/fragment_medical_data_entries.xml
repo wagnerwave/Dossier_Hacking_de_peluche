@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/medical_data_entries_grid_headers" android:background="@drawable/bg_gradient_green" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="27sp" android:textColor="@android:color/white" android:id="@+id/medical_data_entries_label_fl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="FL"/>
+            <TextView android:textSize="18sp" android:textColor="@android:color/white" android:id="@+id/medical_data_entries_label_longitud_femur" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5dp" android:text="Longitud\10Femur"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="27sp" android:textColor="@android:color/white" android:id="@+id/medical_data_entries_label_hc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="HC"/>
+            <TextView android:textSize="18sp" android:textColor="@android:color/white" android:id="@+id/medical_data_entries_label_perimetro_craneal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5dp" android:text="Perímetro\10Craneal"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="27sp" android:textColor="@android:color/white" android:id="@+id/medical_data_entries_label_ac" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AC"/>
+            <TextView android:textSize="18sp" android:textColor="@android:color/white" android:id="@+id/medical_data_entries_label_perimetro_abdominal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5dp" android:text="Perímetro\10Abdominal"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="27sp" android:textColor="@android:color/white" android:id="@+id/medical_data_entries_label_efw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EFW"/>
+            <TextView android:textSize="18sp" android:textColor="@android:color/white" android:id="@+id/medical_data_entries_label_estimacion_peso" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5dp" android:text="Estimación\10Peso"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ListView android:id="@+id/medical_data_entries_list_entries" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/medical_data_entries_grid_headers"/>
+</LinearLayout>

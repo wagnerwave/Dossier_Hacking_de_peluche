@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sozpic.miniland.TopMenuActivity android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/cabecera" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="@dimen/alto_menu_head"/>
+    <include android:id="@+id/detalle_bebe_buttons_container" android:layout_width="match_parent" android:layout_height="@dimen/alto_spinner" android:layout_alignParentBottom="true" layout="@layout/layout_edit_delete_buttons"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/detalle_bebe_buttons_container" android:layout_below="@+id/cabecera">
+        <LinearLayout android:orientation="vertical" android:id="@+id/x" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/linear_bebe" android:background="@drawable/fondocrear" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.cuatroochenta.commons.widget.CircularImageView android:layout_gravity="center_vertical" android:id="@+id/lo" android:layout_width="@dimen/alto_circulo" android:layout_height="@dimen/alto_circulo" android:layout_margin="10dp"/>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2dp">
+                    <TextView android:textSize="@dimen/fuente_menu" android:textColor="#ffffff" android:ellipsize="end" android:id="@+id/nombre" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true"/>
+                    <TextView android:textSize="@dimen/fuente_menu" android:textColor="#ffffff" android:ellipsize="end" android:id="@+id/apel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true"/>
+                    <TextView android:textSize="@dimen/fuente_menu" android:textColor="#ffffff" android:id="@+id/fechanac" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2dp" android:singleLine="true"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="left" android:id="@+id/sexo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                <TextView android:textSize="@dimen/fuente_home2" android:textColor="#8daeff" android:id="@+id/sexo_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/laltura" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:background="#e5e5e6" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                    <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="left" android:id="@+id/altura" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                    <TextView android:textSize="@dimen/fuente_home2" android:textColor="#8daeff" android:id="@+id/altura_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/lpeso" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:background="#e5e5e6" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                    <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="left" android:id="@+id/peso" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                    <TextView android:textSize="@dimen/fuente_home2" android:textColor="#8daeff" android:id="@+id/peso_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/lcabeza" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:background="#e5e5e6" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                    <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="left" android:id="@+id/medidacabeza" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                    <TextView android:textSize="@dimen/fuente_home2" android:textColor="#8daeff" android:id="@+id/medidacabeza_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="left" android:id="@+id/piel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                <TextView android:textSize="@dimen/fuente_home2" android:textColor="#8daeff" android:id="@+id/piel_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View android:background="#e5e5e6" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="left" android:id="@+id/ojos" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                <TextView android:textSize="@dimen/fuente_home2" android:textColor="#8daeff" android:id="@+id/ojos_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View android:background="#e5e5e6" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="left" android:id="@+id/pelo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                <TextView android:textSize="@dimen/fuente_home2" android:textColor="#8daeff" android:id="@+id/pelo_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View android:background="#e5e5e6" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="left" android:id="@+id/hospital" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                <TextView android:textSize="@dimen/fuente_home2" android:textColor="#8daeff" android:id="@+id/hospital_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View android:background="#e5e5e6" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="left" android:id="@+id/ginecologo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                <TextView android:textSize="@dimen/fuente_home2" android:textColor="#8daeff" android:id="@+id/ginecologo_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View android:background="#e5e5e6" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="right" android:id="@+id/matron" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                <TextView android:textSize="@dimen/fuente_home2" android:textColor="#8daeff" android:id="@+id/matron_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

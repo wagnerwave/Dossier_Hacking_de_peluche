@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="@color/menu_lateral_list_divider" android:layout_width="match_parent" android:layout_height="2dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/alto_menu_head">
+        <View android:background="@color/menu_lateral_list_divider" android:layout_width="2dp" android:layout_height="match_parent"/>
+        <ImageView android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="18dp" android:layout_marginBottom="18dp" android:src="@drawable/ic_emybaby" android:scaleType="centerInside"/>
+        <View android:background="@color/menu_lateral_list_divider" android:layout_width="2dp" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <View android:background="@color/menu_lateral_list_divider" android:layout_width="match_parent" android:layout_height="2dp"/>
+    <ListView android:id="@+id/list" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:cacheColorHint="@android:color/transparent" android:divider="@color/menu_lateral_list_divider" android:dividerHeight="2px"/>
+</LinearLayout>

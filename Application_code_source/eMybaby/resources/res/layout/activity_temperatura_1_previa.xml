@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sozpic.miniland.TopMenuActivity android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/cabecera" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="@dimen/alto_menu_head"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:id="@+id/linear_video" android:background="#ffcae3" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="left" android:layout_gravity="left" android:id="@+id/select_option" android:padding="10dp" android:paddingTop="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#cfd1d2" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <RelativeLayout android:id="@+id/lnewreader" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/flecha" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginRight="5dp" android:src="@drawable/pico_rosa" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="@dimen/fuente_home" android:textColor="@color/default_text_color" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/newreading" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/flecha"/>
+    </RelativeLayout>
+    <View android:background="#cfd1d2" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <RelativeLayout android:id="@+id/lstats" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/temperatura_previa_stat_disclosure" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginRight="5dp" android:src="@drawable/pico_rosa" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="@dimen/fuente_home" android:textColor="@color/default_text_color" android:id="@+id/stats" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/temperatura_previa_stat_disclosure"/>
+    </RelativeLayout>
+    <View android:background="#cfd1d2" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

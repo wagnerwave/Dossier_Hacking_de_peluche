@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sozpic.miniland.TopMenuActivity android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/pregnancy_contraction_common_header" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="@dimen/alto_menu_head"/>
+    <include android:id="@+id/pregnancy_contraction_list_header" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/layout_pregnancy_section_header"/>
+    <RelativeLayout android:id="@+id/pregnancy_contraction_head_container" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="2">
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/bg_pregnancy_contraction" android:scaleType="fitXY"/>
+        <ImageView android:id="@+id/pregnancy_contraction_play_pause" android:layout_width="@dimen/player_play_button_size" android:layout_height="@dimen/player_play_button_size" android:layout_marginTop="15dp" android:layout_marginBottom="10dp" android:src="@drawable/ic_pregnancy_contraction_play" android:layout_centerInParent="true"/>
+        <FrameLayout android:id="@+id/pregnancy_contraction_button_container" android:background="@drawable/bg_red_rounded" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margen_listados" android:layout_below="@+id/pregnancy_contraction_play_pause" android:layout_centerHorizontal="true">
+            <Chronometer android:textSize="@dimen/player_control_textsize" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@+id/pregnancy_contraction_chrono" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <com.sozpic.miniland.componentes.TextViewHelvetica android:textSize="@dimen/player_control_textsize" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@+id/pregnancy_contraction_start_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </FrameLayout>
+    </RelativeLayout>
+    <ListView android:id="@+id/pregnancy_contraction_list_listview" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="3"/>
+    <FrameLayout android:orientation="horizontal" android:id="@+id/pregnancy_contraction_list_bottom_container" android:layout_width="match_parent" android:layout_height="@dimen/player_control_icons_size">
+        <include layout="@layout/layout_bottom_bar_multiple_selector"/>
+    </FrameLayout>
+</LinearLayout>

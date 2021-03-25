@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:baselineAligned="false">
+    <LinearLayout android:orientation="horizontal" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="10dp" android:layout_weight="1">
+        <TextView android:textSize="@dimen/fuente_home" android:textColor="#fd82af" android:ellipsize="end" android:id="@+id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:lines="1"/>
+        <TextView android:textSize="@dimen/fuente_home" android:textColor="#333333" android:ellipsize="end" android:id="@+id/event" android:layout_width="0dp" android:layout_height="wrap_content" android:lines="1" android:layout_weight="1"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/eventLayout" android:layout_width="40dp" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/flecha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:src="@drawable/fecharoja2"/>
+    </FrameLayout>
+</LinearLayout>

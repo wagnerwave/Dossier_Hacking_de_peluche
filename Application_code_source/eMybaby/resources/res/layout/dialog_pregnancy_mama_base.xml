@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/mama_text_size_28pt" android:textColor="@color/text_color" android:id="@+id/tv_date" android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingRight="15dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/dialog_mama_select_date_container" android:background="@drawable/bg_white_with_grey_border" android:paddingLeft="5dp" android:paddingTop="5dp" android:paddingRight="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="10dp">
+        <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:textColorHint="#404041" android:id="@+id/dialog_mama_dateselector" android:background="#ffffff" android:padding="5dp" android:focusable="false" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1" android:inputType="none"/>
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/tick_fecha"/>
+    </LinearLayout>
+    <View android:background="@color/grey" android:layout_width="match_parent" android:layout_height="2dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+        <View android:background="@color/grey" android:layout_width="0.5dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="@dimen/mama_text_size_28pt" android:textColor="@color/mama_menu_options_color" android:gravity="center" android:id="@+id/tv_dialog_cancel" android:background="?attr/selectableItemBackground" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textAllCaps="true"/>
+        <View android:background="@color/grey" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="@dimen/mama_text_size_28pt" android:textColor="@color/mama_date_picker_save_color" android:gravity="center" android:id="@+id/tv_dialog_save" android:background="?attr/selectableItemBackground" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textAllCaps="true"/>
+        <View android:background="@color/grey" android:layout_width="0.5dp" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <View android:background="@color/grey" android:layout_width="match_parent" android:layout_height="2dp"/>
+</LinearLayout>

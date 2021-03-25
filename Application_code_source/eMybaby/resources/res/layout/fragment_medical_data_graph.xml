@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/bg_gradient_green" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:background="#33ffffff" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="40dp">
+        <ImageView android:id="@+id/medical_data_graph_button_graph_fl" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/ic_graph_fl" android:tint="@android:color/white" android:layout_weight="1"/>
+        <ImageView android:id="@+id/medical_data_graph_button_graph_hc" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/ic_graph_hc" android:tint="@android:color/white" android:layout_weight="1"/>
+        <ImageView android:id="@+id/medical_data_graph_button_graph_ac" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/ic_graph_ac" android:tint="@android:color/white" android:layout_weight="1"/>
+        <ImageView android:id="@+id/medical_data_graph_button_efw" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/ic_graph_efw" android:tint="@android:color/white" android:layout_weight="1"/>
+    </LinearLayout>
+    <View android:background="#cfd1d2" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <TextView android:textSize="24sp" android:textColor="@android:color/white" android:id="@+id/medical_data_graph_text_data_type_acronym" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp"/>
+    <TextView android:textSize="13sp" android:textStyle="normal" android:textColor="@android:color/white" android:id="@+id/medical_data_graph_text_data_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="-5dp"/>
+    <WebView android:id="@+id/medical_data_graph_webview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="15dp"/>
+</LinearLayout>

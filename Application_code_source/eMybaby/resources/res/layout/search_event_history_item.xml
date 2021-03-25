@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="@dimen/alto_menu">
+        <ImageView android:id="@+id/menu" android:layout_width="@dimen/alto_menu_b" android:layout_height="@dimen/alto_menu_b" android:src="@mipmap/ic_launcher" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/img" android:layout_width="wrap_content" android:layout_height="@dimen/alto_menu_b" android:src="@drawable/nuevacab" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/fondocab" android:layout_width="match_parent" android:layout_height="10dp" android:src="@drawable/fondo_cab" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:src="@drawable/history"/>
+        <ImageView android:layout_gravity="center_vertical" android:background="#cccccc" android:layout_width="0.3dp" android:layout_height="match_parent"/>
+        <ImageView android:layout_gravity="center_vertical" android:background="#eeeeee" android:layout_width="0.7dp" android:layout_height="match_parent"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="@dimen/fuente_home" android:textStyle="bold" android:textColor="#333" android:id="@+id/txtEventType" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="4dp" android:layout_marginBottom="1dp"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/fuente_home" android:textColor="#333" android:id="@+id/txtStartTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginBottom="4dp"/>
+                <TextView android:textSize="@dimen/fuente_home" android:textColor="#999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1dp" android:layout_marginRight="1dp" android:layout_marginBottom="4dp" android:text=" - "/>
+                <TextView android:textSize="@dimen/fuente_home" android:textColor="#333" android:id="@+id/txtStopTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

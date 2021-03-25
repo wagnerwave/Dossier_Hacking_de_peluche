@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@+id/imageView1" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_launcher"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/imageView2" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/nuevacab"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+            <TextView android:textColor="#000000" android:id="@+id/txtOldPassword" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="3"/>
+            <EditText android:id="@+id/edtOldPassword" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" android:inputType="textPassword"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+            <TextView android:textColor="#000000" android:id="@+id/txtNewPassword" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="3"/>
+            <EditText android:id="@+id/edtNewPassword" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" android:inputType="textPassword"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+            <TextView android:textColor="#000000" android:id="@+id/txtConfirmPassword" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="3"/>
+            <EditText android:id="@+id/edtConfirmPassword" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" android:inputType="textPassword"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:padding="3dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/btnOK" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:id="@+id/btnCancel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

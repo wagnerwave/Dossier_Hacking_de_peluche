@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:background="@drawable/popup_bg" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="16sp" android:textColor="@color/popup_text_color" android:id="@+id/text" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+    <View android:background="@color/separator_color" android:layout_width="1dp" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginTop="15dp" android:layout_marginRight="8dp" android:layout_marginBottom="15dp" android:layout_weight="0"/>
+    <Button android:textColor="@color/popup_text_color" android:id="@+id/undo" android:background="@drawable/undo_btn_bg" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_action_undo" android:layout_weight="0"/>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sozpic.miniland.TopMenuActivity android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/pregnancy_sound_list_common_header" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="@dimen/alto_menu_head"/>
+    <include android:id="@+id/pregnancy_sound_list_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/pregnancy_sound_list_common_header" layout="@layout/layout_pregnancy_section_header"/>
+    <FrameLayout android:orientation="horizontal" android:id="@+id/pregnancy_sound_list_bottom_container" android:layout_width="match_parent" android:layout_height="50dp" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <include layout="@layout/layout_bottom_bar_multiple_selector"/>
+    </FrameLayout>
+    <ListView android:id="@+id/pregnancy_sound_list_listview" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@color/list_divider" android:dividerHeight="1dp" android:layout_above="@+id/pregnancy_sound_list_bottom_container" android:layout_below="@+id/pregnancy_sound_list_header" android:layout_alignWithParentIfMissing="true"/>
+</RelativeLayout>

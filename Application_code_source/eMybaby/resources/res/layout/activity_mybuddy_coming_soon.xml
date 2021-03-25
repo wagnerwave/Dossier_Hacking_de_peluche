@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/bb" android:layout_width="match_parent" android:layout_height="@dimen/altobebebe" android:src="@drawable/bbemybuddy" android:scaleType="centerCrop"/>
+    <ImageView android:id="@+id/logo_emybaby_intermedia_bemybuddy" android:background="#f0ebe9" android:paddingLeft="100dp" android:paddingTop="15dp" android:paddingRight="100dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/logo_bemybuddy_mini" android:layout_below="@+id/bb"/>
+    <com.sozpic.miniland.componentes.TextViewHelvetica android:textSize="@dimen/fuente_home" android:gravity="center" android:id="@+id/texto_intermedia_bemybuddy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/logo_emybaby_intermedia_bemybuddy" android:layout_centerInParent="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/mybuddy_coming_soon_moreinfo_container" android:background="@drawable/boton_marron" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/fuente_home" android:textStyle="bold" android:gravity="center" android:layout_gravity="center" android:id="@+id/texto_intermedia_bemybuddy_click" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A la venta en Septiembre"/>
+        <TextView android:textSize="@dimen/fuente_home2" android:gravity="center" android:layout_gravity="center" android:id="@+id/texto_intermedia_bemybuddy_forsale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A la venta en Septiembre"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/sep_tmp_emybuddy" android:layout_above="@+id/mybuddy_coming_soon_moreinfo_container" android:layout_below="@+id/texto_intermedia_bemybuddy">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/elephant" android:layout_weight="1"/>
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/elefantbemy" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

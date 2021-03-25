@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.sozpic.miniland.TopMenuActivity android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/cabecera" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="@dimen/alto_menu_head"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/fondosuperiortermo" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <FrameLayout android:layout_gravity="center" android:layout_width="@dimen/myscale_baby_header_image" android:layout_height="@dimen/myscale_baby_header_image">
+                <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/iconotermogrande"/>
+                <com.cuatroochenta.commons.widget.CircularImageView android:id="@+id/icono" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/myscale_baby_header_padding" android:scaleType="fitCenter"/>
+            </FrameLayout>
+            <TextView android:textSize="@dimen/fuente_menu" android:textColor="#ffffff" android:id="@+id/nombrebb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp"/>
+            <TextView android:textSize="@dimen/fuente_menu" android:textColor="#ffffff" android:id="@+id/apellidobb" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/centro" android:background="@drawable/fondosuperiortermo" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1">
+                <ImageView android:id="@+id/imageView1x" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cuadroinicial" android:layout_centerInParent="true" android:alpha="0.9"/>
+                <TextView android:textSize="@dimen/tmpp" android:textColor="#ffffff" android:id="@+id/tmptomada" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--º" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="#ebabd0" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:textSize="@dimen/fuente_home" android:textColor="#ffffff" android:id="@+id/nuevatemp" android:background="#ff1865" android:padding="@dimen/margen_imagenes" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+                <Button android:textSize="@dimen/fuente_home" android:textColor="#ffffff" android:id="@+id/registrar" android:background="#00c1a5" android:padding="@dimen/margen_imagenes" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/lnuevatmp" android:background="@drawable/fondoinferiortermo" android:visibility="visible" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/linear_nueva" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.sozpic.miniland.componentes.TextViewHelvetica android:textSize="@dimen/fuente_tap" android:textStyle="normal" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center" android:id="@+id/nueva" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/linear_nueva_manual" android:background="@drawable/boton_tipo" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp">
+                <TextView android:textSize="@dimen/fuente_home" android:textStyle="normal" android:textColor="#ff333333" android:gravity="center" android:layout_gravity="center" android:id="@+id/nueva_manual" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/temperature_manager_waiting" android:background="@drawable/fondo_termometro_pop" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/alto_menu_head">
+        <ImageView android:id="@+id/temperature_manager_waiting_image" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/circulo_termometro_pop" android:scaleType="centerCrop" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</FrameLayout>

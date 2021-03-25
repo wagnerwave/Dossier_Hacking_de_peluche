@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/row_menu">
+    <com.cuatroochenta.commons.widget.CircularImageView android:layout_gravity="center_vertical" android:id="@+id/lo" android:layout_width="@dimen/alto_menu" android:layout_height="@dimen/alto_menu" android:layout_margin="10dp"/>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/margen_listados" android:layout_marginLeft="0dp" android:layout_weight="1">
+        <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:id="@+id/texto1" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/fuente_home" android:textColor="#8daeff" android:id="@+id/texto2" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout android:layout_gravity="right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <TextView android:textSize="11dp" android:textColor="#666666" android:layout_gravity="bottom" android:id="@+id/texto3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/flecha" android:padding="@dimen/margen_imagenes" android:layout_width="@dimen/alto_menu_b" android:layout_height="@dimen/alto_menu_b" android:layout_margin="10dp" android:src="@drawable/flechabebe"/>
+</LinearLayout>

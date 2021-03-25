@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sozpic.miniland.componentes.Cuadrado android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center" android:id="@+id/menu_buddy_item_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+    </com.sozpic.miniland.componentes.Cuadrado>
+    <com.sozpic.miniland.componentes.TextViewGotham android:textSize="@dimen/fuente_menu" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/menu_buddy_item_name" android:paddingBottom="@dimen/separacionhome" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

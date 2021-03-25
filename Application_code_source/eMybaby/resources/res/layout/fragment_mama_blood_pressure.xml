@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/pregnancy_mama_common_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" layout="@layout/my_pregnancy_mama_header"/>
+    <LinearLayout android:id="@+id/mama_blood_pressure_area_headers" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/pregnancy_mama_common_header">
+        <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/buddy_menu_textsize" android:textColor="@color/mama_menu_options_text_color" android:gravity="center" android:id="@+id/tv_mama_blood_pressure_sistolica" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/buddy_menu_textsize" android:textColor="@color/mama_menu_options_text_color" android:gravity="center" android:id="@+id/tv_mama_blood_pressure_diastolica" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <ListView android:id="@+id/lv_mama_blood_pressure" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="#ced1d2" android:dividerHeight="1dp" android:layout_below="@+id/mama_blood_pressure_area_headers" android:headerDividersEnabled="true" android:footerDividersEnabled="true"/>
+</RelativeLayout>

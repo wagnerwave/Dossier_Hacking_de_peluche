@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="@dimen/player_item_height">
+    <FrameLayout android:id="@+id/buddy_player_item_icon_container" android:layout_width="@dimen/player_item_height" android:layout_height="@dimen/player_item_height">
+        <ImageView android:id="@+id/buddy_player_item_icon_image" android:layout_width="@dimen/player_item_height" android:layout_height="@dimen/player_item_height" android:scaleType="centerCrop" android:layout_alignParentLeft="true"/>
+        <TextView android:textSize="@dimen/player_item_tracknum_textsize" android:textColor="@color/purple" android:gravity="center" android:layout_gravity="center" android:id="@+id/buddy_player_item_icon_text" android:layout_width="@dimen/player_item_height" android:layout_height="@dimen/player_item_height" android:lines="1"/>
+    </FrameLayout>
+    <View android:background="@color/list_divider" android:layout_width="1dp" android:layout_height="@dimen/player_item_height" android:layout_toRightOf="@+id/buddy_player_item_icon_container"/>
+    <FrameLayout android:id="@+id/buddy_player_item_favourites_container" android:layout_width="@dimen/player_item_height" android:layout_height="@dimen/player_item_height" android:layout_alignParentRight="true">
+        <ImageView android:layout_gravity="center" android:id="@+id/buddy_player_item_favourites" android:layout_width="@dimen/player_item_favourite_size" android:layout_height="@dimen/player_item_favourite_size" android:src="@drawable/ic_favourite"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/buddy_player_item_favourites_container" android:layout_toRightOf="@+id/buddy_player_item_icon_container">
+        <TextView android:textSize="@dimen/player_item_textsize" android:textColor="@color/default_text_color" android:ellipsize="end" android:id="@+id/buddy_player_item_name" android:layout_width="match_parent" android:layout_height="0dp" android:singleLine="true" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/player_item_textsize" android:textColor="@color/purple" android:id="@+id/buddy_player_item_duration" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

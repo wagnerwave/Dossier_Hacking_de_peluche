@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/detalle_crecimiento_buttons_container" android:layout_width="match_parent" android:layout_height="@dimen/alto_spinner" android:layout_alignParentBottom="true" layout="@layout/layout_edit_delete_buttons"/>
+    <com.sozpic.miniland.TopMenuActivity android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/detalle_crecimiento_cabecera" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="@dimen/alto_menu_head"/>
+    <include android:id="@+id/detalle_crecimiento_main_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/detalle_crecimiento_buttons_container" android:layout_below="@+id/detalle_crecimiento_cabecera" layout="@layout/view_crecimiento"/>
+</RelativeLayout>

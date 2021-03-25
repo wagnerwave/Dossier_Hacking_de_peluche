@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/borde_redondeado_blanco" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true">
+        <LinearLayout android:gravity="center" android:layout_gravity="top" android:orientation="vertical" android:id="@+id/x" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/fuente_home" android:textColor="#404041" android:gravity="left" android:layout_gravity="center" android:id="@+id/texto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <View android:background="#eeeeee" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/controlador" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/fuente_home" android:textColor="#1dbea5" android:id="@+id/ccancel" android:background="@null" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>
